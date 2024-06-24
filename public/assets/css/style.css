@@ -1,0 +1,11 @@
+
+.discount{
+    background-color: #FF0080;
+    height:48px;
+    padding:15px 0 10px;
+}
+
+.d-flex{
+    display: flex;
+    align-items: center;
+}
