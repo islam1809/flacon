@@ -12,11 +12,34 @@
 
 <body>
     <div class="discount">
-    <div class="container d-flex"><p style="color: white;">Только до конца месяца <span>скидка 20%</span> на все наливные духи</p>
-        <button style="background: none; border:none; color:white"> <img src="{{asset('/assets/images/cross.png')}}"></button>
-      </div>
+        <div class="container d-flex">
+            <p style="color: white;">Только до конца месяца <span>скидка 20%</span> на все наливные духи</p>
+            <button style="background: none; border:none; color:white"> <img
+                    src="{{ asset('/assets/images/cross.png') }}"></button>
+        </div>
     </div>
+    <div class="container">
+        <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+            <div class=" p-2 dropdow">
+             <button class="dropbtn">Условия работы</button>
+             <div class="dropdowncontent">
 
+             </div>
+            </div>
+            <div class="col">
+                <div class="p-3"><a href="">Франшиза</a></div>
+            </div>
+            <div class="col">
+                <div class="p-3"><a href="">Блог</a></div>
+            </div>
+            <div class="col">
+                <div class="p-3"><a href="">О нас</a></div>
+            </div>
+            <div class="col">
+                <div class="p-3"><a href=""> Контакты</a></div>
+            </div>
+        </div>
+    </div>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -57,7 +80,10 @@
             </div>
         </div>
     </nav>
+    <script src="{{ asset('/assets/js/jquery.min.js') }}"></script>
     <script src="{{ asset('/assets/js/bootstrap.min.js') }}"></script>
+    <script src="{{ asset('/assets/js/popper.min.js') }}"></script>
+    
 </body>
 
 </html>
