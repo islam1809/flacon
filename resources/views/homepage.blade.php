@@ -20,10 +20,9 @@
     </div>
     <div class="container">
         <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
-            <div class=" p-2 dropdow">
-             <button class="dropbtn">Условия работы</button>
+            <div class=" p-3 dropdown">
+             <a href="/" class="dropbtn">Условия работы</a>
              <div class="dropdowncontent">
-
              </div>
             </div>
             <div class="col">
