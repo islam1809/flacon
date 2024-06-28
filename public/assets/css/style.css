@@ -83,13 +83,13 @@ a{
 .dropdown-menu .num:hover {
     /* text-decoration: none !important; */
     text-decoration-color:white !important;
-    transition: 0.5s ease-in-out; 
     
 }
 
 .dropdown-menu .num{
     text-decoration: underline !important;
     text-underline-offset: 3px;
+    transition: 0.5s ease-in-out; 
 }
 
 dropdown-item:focus, .dropdown-item:hover {
