@@ -204,11 +204,15 @@
     <div class="container" style="margin-top:35px">
         <div class="slick-carousel">
             <div class=" flex-column custom-slide" >
+                <div class="stick-sale">Sale</div>
+                <div class="stick-new">New</div>
+                <div class="stick-favorite"><img src="{{asset('/assets/images/Favorite.svg')}}" alt=""></div>
+               <button class="stick-view-btn">Быстрый просмотр</button>
                 <img src="{{ asset('/assets/images/Rectangle 1.svg') }}" alt="">
-                <p style="font-size: 15px; ">Shermadini House(LAB parfum) №159 (100мл)</p>
+                <p class="product-title">Shermadini House(LAB parfum) №159 (100мл)</p>
                 <div>
-                    <p style="font-size:12px ">Ночной/Апельсин/Зима/Осень</p>
-                    <button>Узнать цену</button>
+                    <p class="product-descript">Ночной / Апельсин / Зима / Осень</p>
+                    <button class="product-btn">Узнать цену</button>
                 </div>
             </div>
             <div class="custom-slide"><img src="{{ asset('/assets/images/Rectangle 2.svg') }}" alt=""></div>
