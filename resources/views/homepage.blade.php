@@ -189,6 +189,12 @@
         </div>
     </div>
 
+
+    {{-- Лидеры продаж --}}
+
+
+    {{-- start --}}
+
     <div class="container" style="margin-top:104px">
         <div class="sales-header">
             <div class="row justify-content-between">
@@ -203,40 +209,182 @@
 
     <div class="container" style="margin-top:35px">
         <div class="slick-carousel">
-            <div class=" flex-column custom-slide" >
+            <div class=" flex-column custom-slide">
                 <div class="stick-sale">Sale</div>
                 <div class="stick-new">New</div>
-                <div class="stick-favorite"><img src="{{asset('/assets/images/Favorite.svg')}}" alt=""></div>
-               <button class="stick-view-btn">Быстрый просмотр</button>
-                <img src="{{ asset('/assets/images/Rectangle 1.svg') }}" alt="">
-                <p class="product-title">Shermadini House(LAB parfum) №159 (100мл)</p>
-                <div>
+                <div class="stick-favorite"><img src="{{ asset('/assets/images/Favorite.svg') }}" alt="">
+                </div>
+                <button class="stick-view-btn">Быстрый просмотр</button>
+                <img class="productimage" src="{{ asset('/assets/images/Rectangle 1.svg') }}" alt="">
+                <p class="product-title">Dimond 18мл голубой </p>
+                <div class="description">
                     <p class="product-descript">Ночной / Апельсин / Зима / Осень</p>
                     <button class="product-btn">Узнать цену</button>
                 </div>
             </div>
-            <div class="custom-slide"><img src="{{ asset('/assets/images/Rectangle 2.svg') }}" alt=""></div>
-            <div class="custom-slide"><img src="{{ asset('/assets/images/Rectangle 3.svg') }}" alt=""></div>
-            <div class="custom-slide"><img src="{{ asset('/assets/images/Rectangle 4.svg') }}" alt=""></div>
-            <div class="custom-slide"><img src="{{ asset('/assets/images/Rectangle 1.svg') }}" alt=""></div>
-            <div class="custom-slide"><img src="{{ asset('/assets/images/Rectangle 1.svg') }}" alt=""></div>
-            <div class="custom-slide"><img src="{{ asset('/assets/images/Rectangle 1.svg') }}" alt=""></div>
-            <div class="custom-slide"><img src="{{ asset('/assets/images/Rectangle 1.svg') }}" alt=""></div>
-            <div class="custom-slide"><img src="{{ asset('/assets/images/Rectangle 1.svg') }}" alt=""></div>
+            <div class="custom-slide">
+                <div class="stick-sale">Sale</div>
+                <div class="stick-favorite"><img src="{{ asset('/assets/images/Favorite.svg') }}" alt="">
+                </div>
+                <button class="stick-view-btn">Быстрый просмотр</button>
+                <img class="productimage" src="{{ asset('/assets/images/Rectangle 2.svg') }}" alt="">
+                <p class="product-title">Shermadini House(LAB parfum) №159 (100мл)</p>
+                <div class="description">
+                    <p class="product-descript">Ночной / Апельсин / Зима / Осень</p>
+                    <button class="product-btn">Узнать цену</button>
+                </div>
+            </div>
+            <div class="custom-slide">
+                <div class="stick-sale">Hit</div>
+                <div class="stick-favorite"><img src="{{ asset('/assets/images/Favorite.svg') }}" alt="">
+                </div>
+                <button class="stick-view-btn">Быстрый просмотр</button>
+                <img src="{{ asset('/assets/images/Rectangle 3.svg') }}" alt="">
+                <p class="product-title">Мерцающая соль "Виноград" 300гр</p>
+                <div class="description">
+                    <p class="product-descript">Ночной / Апельсин / Зима / Осень</p>
+                    <button class="product-btn">Узнать цену</button>
+                </div>
+            </div>
+            <div class="custom-slide">
+                <div class="stick-sale">Sale</div>
+                <div class="stick-new">New</div>
+                <div class="stick-favorite"><img src="{{ asset('/assets/images/Favorite.svg') }}" alt="">
+                </div>
+                <button class="stick-view-btn">Быстрый просмотр</button>
+                <img src="{{ asset('/assets/images/Rectangle 4.svg') }}" alt="">
+                <p class="product-title">Hugo 30гр Pink</p>
+                <div class="description">
+                    <p class="product-descript">Ночной / Апельсин / Зима / Осень</p>
+                    <button class="product-btn">Узнать цену</button>
+                </div>
+            </div>
+            <div class="custom-slide">
+                <div class="stick-sale">Sale</div>
+                <div class="stick-favorite"><img src="{{ asset('/assets/images/Favorite.svg') }}" alt="">
+                </div>
+                <button class="stick-view-btn">Быстрый просмотр</button>
+                <button class="stick-view-btn">Быстрый просмотр</button>
+                <img src="{{ asset('/assets/images/Rectangle 2.svg') }}" alt="">
+                <p class="product-title">Hugo 30гр Pink</p>
+                <div class="description">
+                    <p class="product-descript">Ночной / Апельсин / Зима / Осень</p>
+                    <button class="product-btn">Узнать цену</button>
+                </div>
+            </div>
+            <div class="custom-slide">
+                <div class="stick-sale">Sale</div>
+                <div class="stick-favorite"><img src="{{ asset('/assets/images/Favorite.svg') }}" alt="">
+                </div>
+                <button class="stick-view-btn">Быстрый просмотр</button>
+                <button class="stick-view-btn">Быстрый просмотр</button>
+                <img src="{{ asset('/assets/images/Rectangle 4.svg') }}" alt="">
+                <p class="product-title">Hugo 30гр Pink</p>
+                <div class="description">
+                    <p class="product-descript">Ночной / Апельсин / Зима / Осень</p>
+                    <button class="product-btn">Узнать цену</button>
+                </div>
+            </div>
+            <div class="custom-slide">
+                <div class="stick-sale">Sale</div>
+                <div class="stick-favorite"><img src="{{ asset('/assets/images/Favorite.svg') }}" alt="">
+                </div>
+                <button class="stick-view-btn">Быстрый просмотр</button>
+                <button class="stick-view-btn">Быстрый просмотр</button>
+                <img src="{{ asset('/assets/images/Rectangle 1.svg') }}" alt="">
+                <p class="product-title">Hugo 30гр Pink</p>
+                <div class="description">
+                    <p class="product-descript">Ночной / Апельсин / Зима / Осень</p>
+                    <button class="product-btn">Узнать цену</button>
+                </div>
+            </div>
+            <div class="custom-slide">
+                <div class="stick-sale">Sale</div>
+                <div class="stick-new">New</div>
+                <div class="stick-favorite"><img src="{{ asset('/assets/images/Favorite.svg') }}" alt="">
+                </div>
+                <button class="stick-view-btn">Быстрый просмотр</button>
+                <button class="stick-view-btn">Быстрый просмотр</button>
+                <img src="{{ asset('/assets/images/Rectangle 3.svg') }}" alt="">
+                <p class="product-title">Hugo 30гр Pink</p>
+                <div class="description">
+                    <p class="product-descript">Ночной / Апельсин / Зима / Осень</p>
+                    <button class="product-btn">Узнать цену</button>
+                </div>
+            </div>
+            <div class="custom-slide">
+                <div class="custom-slide">
+                    <div class="stick-sale">Sale</div>
+                    <div class="stick-favorite"><img src="{{ asset('/assets/images/Favorite.svg') }}"
+                            alt=""></div>
+                    <button class="stick-view-btn">Быстрый просмотр</button>
+                    <button class="stick-view-btn">Быстрый просмотр</button>
+                    <img class="productimage" src="{{ asset('/assets/images/Rectangle 3.svg') }}" alt="">
+                    <p class="product-title">Shermadini House(LAB parfum) №159 (100мл)</p>
+                    <div class="description">
+                        <p class="product-descript">Ночной / Апельсин / Зима / Осень</p>
+                        <button class="product-btn">Узнать цену</button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+
+    {{-- end --}}
+
+    {{-- Получите подарок --}}
+
+    {{-- start  --}}
 
     <div class="btn-center">
         <button>В каталог</button>
     </div>
 
     <div class="container">
-        <div class="banner">
-            <p>Получите подарок</p>
-            <div class="wholesale">ОПТОМ от 5000 руб.</div>
-            <button style="width: 370px; align-items-center ">Получить</button>
+        <div class="banner banner-form">
+            <p style="margin: 0">Получите каталог</p>
+            <div class="form">
+                <form action="">
+                    <label for="">Введите ваш номер телефона</label>
+                    <input type="tel" placeholder="+7 (___) ___-__-__" maxlength="18">
+                    <label for="">Куда прислать каталог?</label>
+                    <div class="messangers-trig ">
+                        <div class="custom-trigger d-flex justify-content-between">
+                            Выберите мессенджер
+                            <img src="{{ asset('/assets/images/formArrow.svg') }}" alt="">
+                        </div>
+
+                        <div class="custom-options">
+                            <div class="custom-option">
+                                <img class="customimage" src="{{ asset('/assets/images/tgHover.svg') }}"
+                                    alt="">
+                                Telegram
+                            </div>
+                            <div class="custom-option">
+                                <img src="{{ asset('/assets/images/whatsappHover.png') }}" alt="">
+                                Whatsapp
+                            </div>
+                            <div class="custom-option">
+                                <img src="{{ asset('/assets/images/viberHover.png') }}" alt="">
+                                Viber
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="checkbox">
+                        <input type="checkbox">
+                        <label for=""> Я согласен(-на) на обработку персональных данных и с <span> <a href="">условиями подписки</a></span></label>
+                    </div>
+                </form>
+                <button style="width:100%; margin-top:20px; ">Получить</button>
+            </div>
+
         </div>
     </div>
+
+    {{-- end --}}
+
+
 
     {{-- end --}}
 
