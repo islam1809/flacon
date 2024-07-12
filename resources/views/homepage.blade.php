@@ -372,13 +372,328 @@
                         </div>
                     </div>
                     <div class="checkbox">
-                        <input type="checkbox">
-                        <label for=""> Я согласен(-на) на обработку персональных данных и с <span> <a href="">условиями подписки</a></span></label>
+                        <input type="checkbox" id="customCheckbox">
+                        <label for="customCheckbox">
+                            Я согласен(-на) на обработку персональных данных и с <span> <a href="">условиями
+                                    подписки</a></span>
+                        </label>
                     </div>
                 </form>
                 <button style="width:100%; margin-top:20px; ">Получить</button>
             </div>
 
+        </div>
+    </div>
+    {{-- end --}}
+
+    {{-- Наливная парфюмерия  --}}
+
+    {{-- start --}}
+
+
+    <div class="container" style="margin-top:100px">
+        <div class="categ-row row d-flex">
+            <div class="content-parfum col-lg-6 d-flex flex-column ">
+                <div class="imgwrap">
+                    <a href="">
+                        <img src="{{ asset('/assets/images/parfum.png') }}" alt="">
+                    </a>
+                </div>
+                <a href="" class="parfum-descript">
+                    Наливная парфюмерия
+                </a>
+                <a href="" class="parfumarrow">Подробнее
+                    <span>
+                        <img src="{{ asset('/assets/images/parf-right.svg') }}" alt="">
+                    </span>
+                </a>
+            </div>
+
+            <div class="right-sec d-flex col-6 flex-end">
+                <div class="card-wrap d-flex flex-column">
+                    <div class="second-imgwrap">
+                        <a href="">
+                            <img src="{{ asset('/assets/images/parfum 2.png') }}" alt="">
+                        </a>
+                    </div>
+                    <a href="" class="parfum-descript">
+                        Стеклянные флаконы из прозрачного стекла
+                    </a>
+                    <a href="" class="parfumarrow">Подробнее
+                        <span>
+                            <img src="{{ asset('/assets/images/parf-right.svg') }}" alt="">
+                        </span>
+                    </a>
+                </div>
+                <div class="card-wrap d-flex flex-column">
+                    <div class="second-imgwrap">
+                        <a href="">
+                            <img src="{{ asset('/assets/images/parfum 3.png') }}" alt="">
+                        </a>
+                    </div>
+                    <a href="" class="parfum-descript">
+                        Стеклянные фдаконы из цветного стекла
+                    </a>
+                    <a href="" class="parfumarrow">Подробнее
+                        <span>
+                            <img src="{{ asset('/assets/images/parf-right.svg') }}" alt="">
+                        </span>
+                    </a>
+                </div>
+                <div class="card-wrap d-flex flex-column">
+                    <div class="second-imgwrap">
+                        <a href="">
+                            <img src="{{ asset('/assets/images/parfum 4.png') }}" alt="">
+                        </a>
+                    </div>
+                    <a href="" class="parfum-descript">
+                        Пластиковые флаконы
+                    </a>
+                    <a href="" class="parfumarrow">Подробнее
+                        <span>
+                            <img src="{{ asset('/assets/images/parf-right.svg') }}" alt="">
+                        </span>
+                    </a>
+                </div>
+                <div class="card-wrap d-flex flex-column">
+                    <div class="second-imgwrap">
+                        <a href="">
+                            <img src="{{ asset('/assets/images/parfum 4.png') }}" alt="">
+                        </a>
+                    </div>
+                    <a href="" class="parfum-descript">
+                        Металлические флаконы
+                    </a>
+                    <a href="" class="parfumarrow">Подробнее
+                        <span>
+                            <img src="{{ asset('/assets/images/parf-right.svg') }}" alt="">
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+
+        </div>
+
+        <div class=" row justify-content-between" style="margin-top: 30px">
+            <div class="col-lg-4 d-flex flex-column ">
+                <div class="imgwrap-sec imgwrap-thr">
+                    <a href="">
+                        <img src="{{ asset('/assets/images/parfum 5.png') }}" alt="">
+                    </a>
+                </div>
+                <a href="" class="parfum-descript">
+                    Наливная парфюмерия
+                </a>
+                <a href="" class="parfumarrow">Подробнее
+                    <span>
+                        <img src="{{ asset('/assets/images/parf-right.svg') }}" alt="">
+                    </span>
+                </a>
+            </div>
+
+            <div class="col-lg-4 d-flex flex-column" style="margin-left: 30px">
+                <div class="imgwrap-sec imgwrap-thr">
+                    <a href="">
+                        <img src="{{ asset('/assets/images/parfum 6.png') }}" alt="">
+                    </a>
+                </div>
+                <a href="" class="parfum-descript">
+                    Наливная парфюмерия
+                </a>
+                <a href="" class="parfumarrow">Подробнее
+                    <span>
+                        <img src="{{ asset('/assets/images/parf-right.svg') }}" alt="">
+                    </span>
+                </a>
+            </div>
+
+            <div class="col-lg-4 d-flex flex-column lastdiv ">
+                <div class="imgwrap-sec imgwrap-thr">
+                    <a href="">
+                        <img src="{{ asset('/assets/images/parfum 7.png') }}" alt="">
+                    </a>
+                </div>
+                <a href="" class="parfum-descript">
+                    Наливная парфюмерия
+                </a>
+                <a href="" class="parfumarrow">Подробнее
+                    <span>
+                        <img src="{{ asset('/assets/images/parf-right.svg') }}" alt="">
+                    </span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    {{-- end --}}
+
+
+    {{-- Count section  --}}
+
+    {{-- start --}}
+    <div class="container count-section">
+        <div class=" row count-number d-flex justify-space-between">
+            <div class="col-lg-4">
+                <div data-num=2016 data-step="10" id="number1" class="number">0</div>
+                <p>год основания бренда</p>
+            </div>
+            <div class="col-lg-4">
+                <div id="number2" class="number" data-num="250" data-step="5">0</div>
+                <p>видов парфюма</p>
+            </div>
+            <div class="col-lg-4">
+                <div data-num="5000000" data-step="10000" id="number3" class="number">0</div>
+                <p>проданных флаконов</p>
+            </div>
+        </div>
+    </div>
+
+    {{-- end --}}
+
+
+    {{-- Map section --}}
+
+    {{-- start --}}
+    <div class="container" style="margin-top: 100px">
+        <div class="row map">
+            <div class="col-6 map-section d-flex flex-column">
+                <p>Станьте нашим диллером</p>
+                Если вы хотите стать нашим диллером,<br>
+                свяжитесь с нами:
+                <div class="map-contacts">
+                    <a href="tel:8 800-100-60-41">8 800-100-60-41</a>
+                    <a href="mailto:diler@flacon-opt.ru">diler@flacon-opt.ru</a>
+                </div>
+                <button class="map_btn">Оставить заявку</button>
+            </div>
+
+            <div class="col-6 map-img justify-content-end ">
+                <img src="{{ asset('/assets/images/map.png') }}" alt="">
+            </div>
+        </div>
+    </div>
+    {{-- end --}}
+
+    {{-- Этапы работы  --}}
+
+    {{-- start --}}
+    <div class="container" style="margin-top: 100px">
+        <div class="stage">
+            <p>Этапы работы</p>
+            <div class="row work-stages justify-content-between">
+                <div class="col-lg-4 stages-card">
+                    <img src="{{ asset('/assets/images/card-stages.png') }}" alt="">
+                    <div class="stage-stick">1</div>
+                    <p>Оставить заявку</p>
+                </div>
+                <div class="col-lg-4 stages-card ">
+                    <img src="{{ asset('/assets/images/card-stages2.png') }}" alt="">
+                    <div class="stage-stick">2</div>
+                    <p>Оформление заказа</p>
+                </div>
+                <div class="col-lg-4 stages-card">
+                    <img src="{{ asset('/assets/images/card-stages3.png') }}" alt="">
+                    <div class="stage-stick">3</div>
+                    <p>Доставка и получение</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{-- end --}}
+
+    {{-- Сертификаты --}}
+
+    {{-- start --}}
+
+    <div class="container" style="margin-top:104px">
+        <div class="sales-header">
+            <div class="row justify-content-between">
+                <div class=" col-9 d-flex">
+                    <p>Лидеры продаж</p>
+                </div>
+                <div class=" col-3 sales-arroww  text-end d-flex">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="slick-carousel">
+            <div class=" flex-column custom-slide">
+                <div class="stick-sale">Sale</div>
+                <div class="stick-new">New</div>
+                <div class="stick-favorite"><img src="{{ asset('/assets/images/Favorite.svg') }}" alt="">
+                </div>
+                <button class="stick-view-btn">Быстрый просмотр</button>
+                <img class="productimage" src="{{ asset('/assets/images/Rectangle 1.svg') }}" alt="">
+                <p class="product-title">Dimond 18мл голубой </p>
+                <div class="description">
+                    <p class="product-descript">Ночной / Апельсин / Зима / Осень</p>
+                    <button class="product-btn">Узнать цену</button>
+                </div>
+            </div>
+            <div class="custom-slide">
+                <div class="stick-sale">Sale</div>
+                <div class="stick-favorite"><img src="{{ asset('/assets/images/Favorite.svg') }}" alt="">
+                </div>
+                <button class="stick-view-btn">Быстрый просмотр</button>
+                <img class="productimage" src="{{ asset('/assets/images/Rectangle 2.svg') }}" alt="">
+                <p class="product-title">Shermadini House(LAB parfum) №159 (100мл)</p>
+                <div class="description">
+                    <p class="product-descript">Ночной / Апельсин / Зима / Осень</p>
+                    <button class="product-btn">Узнать цену</button>
+                </div>
+            </div>
+            <div class="custom-slide">
+                <div class="stick-sale">Sale</div>
+                <div class="stick-favorite"><img src="{{ asset('/assets/images/Favorite.svg') }}" alt="">
+                </div>
+                <button class="stick-view-btn">Быстрый просмотр</button>
+                <img class="productimage" src="{{ asset('/assets/images/Rectangle 2.svg') }}" alt="">
+                <p class="product-title">Shermadini House(LAB parfum) №159 (100мл)</p>
+                <div class="description">
+                    <p class="product-descript">Ночной / Апельсин / Зима / Осень</p>
+                    <button class="product-btn">Узнать цену</button>
+                </div>
+            </div>
+            <div class="custom-slide">
+                <div class="stick-sale">Sale</div>
+                <div class="stick-favorite"><img src="{{ asset('/assets/images/Favorite.svg') }}" alt="">
+                </div>
+                <button class="stick-view-btn">Быстрый просмотр</button>
+                <img class="productimage" src="{{ asset('/assets/images/Rectangle 2.svg') }}" alt="">
+                <p class="product-title">Shermadini House(LAB parfum) №159 (100мл)</p>
+                <div class="description">
+                    <p class="product-descript">Ночной / Апельсин / Зима / Осень</p>
+                    <button class="product-btn">Узнать цену</button>
+                </div>
+            </div>
+            <div class="custom-slide">
+                <div class="stick-sale">Sale</div>
+                <div class="stick-favorite"><img src="{{ asset('/assets/images/Favorite.svg') }}" alt="">
+                </div>
+                <button class="stick-view-btn">Быстрый просмотр</button>
+                <img class="productimage" src="{{ asset('/assets/images/Rectangle 2.svg') }}" alt="">
+                <p class="product-title">Shermadini House(LAB parfum) №159 (100мл)</p>
+                <div class="description">
+                    <p class="product-descript">Ночной / Апельсин / Зима / Осень</p>
+                    <button class="product-btn">Узнать цену</button>
+                </div>
+            </div>
+            <div class="custom-slide">
+                <div class="stick-sale">Sale</div>
+                <div class="stick-favorite"><img src="{{ asset('/assets/images/Favorite.svg') }}" alt="">
+                </div>
+                <button class="stick-view-btn">Быстрый просмотр</button>
+                <img class="productimage" src="{{ asset('/assets/images/Rectangle 2.svg') }}" alt="">
+                <p class="product-title">Shermadini House(LAB parfum) №159 (100мл)</p>
+                <div class="description">
+                    <p class="product-descript">Ночной / Апельсин / Зима / Осень</p>
+                    <button class="product-btn">Узнать цену</button>
+                </div>
+            </div>
         </div>
     </div>
 

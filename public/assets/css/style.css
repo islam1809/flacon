@@ -638,37 +638,340 @@ form input {
     color: black;
 }
 
-.checkbox{
-    position: relative;
-}
-.checkbox input{
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border:  #9EA8BA solid;
-    top: 40%;
-    left: 0;
-    transition: all 0.4 ease-in-out !important;
-}
-
-.checkbox label{
-    padding-left: 36px;
-    font-size: 13px;
-
-}
-.checkbox label span a{   
-    text-decoration: underline;
+.checkbox label span a{
+    text-decoration: underline black;
     text-underline-offset: 2px;
-    transition: all 0.4s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 
-.checkbox:hover label span a:hover{
+.checkbox label span a:hover{
     color: black;
-    text-decoration-color: transparent !important;
+    text-decoration: underline transparent;
+}
+
+.checkbox input{
+    display: none;
+
+}
+.checkbox label{
+    color: black;
+    position: relative;
+    font-size: 13px;
+    padding-left:36px;
+}
+
+.checkbox label::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 24px;
+    height: 24px;
+    border: 1px solid #9EA8BA ;
+    border-radius: 3px;
+    background-color: white;
+    /* transition: 0.3s ; */
+
+}
+.checkbox input:checked + label::before {
+    background-image: url('/assets/images/checkbox.svg');
+    background-size: 14px 18px;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 1;
+}
+    
+/* end */
+
+  
+/* Наливная парфюмерия 
+start */
+
+.content-parfum a{
+    width: fit-content;
+}
+
+.parfum-descript{
+    font-size: 20px;
+    font-family: suisseintl-bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    transition: all 0.4s ease-in-out;
+    width: fit-content;
+}
+
+
+.second-imgwrap{
+    overflow: hidden;
+    width: fit-content;
+    width: 270px;
+    height: 270px;
+    
+}
+
+.right-sec{
+
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 30px;
+    /* gap: calc(20px 0); */
+}
+
+.card-wrap {
+    width: 270px !important;
+
+}
+.card-wrap a {
+    width: 270px !important;
+}
+
+.second-imgwrap{
+    width: 270px;
+    height: 270px;
+    border-radius: 5px;
+}
+
+
+
+.second-imgwrap a img{
+    border-radius: 5px;
+    transition: all 0.4s ease-in-out;
+    object-fit: cover;
+    height: 270px;
+}
+
+.second-imgwrap:hover a img {
+    transform: scale(1.1);
+    border-radius: 5px;
+}
+
+.imgwrap{
+    overflow: hidden;
+    display: inline-block;
+    width: 573px;
+    height: 673px;
+}
+
+.imgwrap a img{
+    border-radius: 5px;
+    transition: all 0.4s ease-in-out;
+    object-fit: cover;
+    height: 670px;
+}
+
+.imgwrap:hover a img {
+    transform: scale(1.1);
+}
+
+.parfum-descript:hover{
+    color: #FF0080;
+}
+
+
+.imgwrap-thr{
+    overflow: hidden;
+    display: inline-block;
+    width: 370px;
+    height: 270px;
+}
+
+.imgwrap-thr a img{
+    transition: all 0.4s ease-in-out;
+    
+    border-radius: 5px;
+}
+
+.imgwrap-thr:hover a img{
+    transform: scale(1.1);
+    border-radius: 5px;
+}
+
+.lastdiv{
+    width: 370px;
+    justify-content: flex-end;
+
+}
+
+.parfumarrow img{
+    margin-left: 4px;
+    width: 35px;
+    height: 35px;
+    transition: all 0.3s ease-in-out;
+}
+
+.parfumarrow:hover{
+    color: black;
+}
+
+.parfumarrow:hover img{
+    color: black;
+    transform: translateX(8px);
+}
+
+/* end */
+
+/* count-section */
+
+/* start */
+
+.count-section{
+    max-width: 970px;
+    margin-top: 100px ;
+}
+
+.count-number{
+justify-content: center;
+align-items: center;
+}
+.count-number p{
+    width: fit-content;
+}
+
+.count-section .number{
+    font-family: suisseintl-bold;
+    font-size: 40px;
+    width: fit-content;  
 }
 /* end */
 
+/* Map section */
 
+
+/* start */
+
+.map{
+    height: 408px;
+    background-color: #F1F4F9;
+    display: flex !important;
+    justify-content: center;
+    padding: 0 70px;
+    color: black;
+    border-radius: 5px;
+}
+
+.map-section{
+    justify-content: center;
+
+}
+
+.map-section p{
+    font-size: 30px;
+    font-family: suisseintl-bold;
+}
+.map-contacts{
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.map-contacts :first-child{
+    margin-bottom: 10px !important;
+}
+
+.map-contacts a:hover{
+    color: black;
+}
+
+ .map-contacts a{
+position: relative;
+text-decoration:none;
+font-family: suisseintl-medium;
+transition: color 0.2s ease-in-out;
+width: fit-content;
+ } 
+
+ .map-contacts a::after{
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: 1px;
+    width: 100%;
+    height: 1.5px;
+    background-color: currentColor;
+    transition: width 0.2s ease-in-out;  
+ }
+
+ .map-contacts a:hover::after {
+    width: 0;
+}
+
+.map-img{
+    display:flex;
+    justify-content: center;
+}
+
+.map_btn{
+    margin-top: 40px;
+    width: 188px;
+    background-color: #00FFFF;
+    color: black;
+    border-radius: 100px;
+    border: none;
+    padding: 15px 10px;
+    transition: all 0.4s ease-in-out;
+}
+
+.map_btn:hover{
+    background-color: #00EDED;
+}
+
+/* end */
+
+
+/* Этапы работы  */
+/* star */
+
+.stage p{
+    font-size: 30px;
+    font-family: suisseintl-bold;
+    margin-bottom: 50px;
+}
+
+.work-stages{
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+
+.stages-card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #DCE1E9;
+    border-radius: 5px;
+    width: 370px;
+    height: 270px;
+}
+
+.stages-card .stage-stick{
+    position: absolute;
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+    bottom: 70%;
+    left: 35%;
+    background-color: #00FFFF;
+    padding: 4px 12px;
+}
+
+.stages-card p{
+    font-size: 18px;
+    margin-top: 35px;
+    margin-bottom: 0;
+}
+
+.stages-card img{
+
+
+}
+
+/* end */
 
 
 /* end */
