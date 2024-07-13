@@ -8,9 +8,26 @@ $(".slick-carousel").slick({
     appendArrows:  $(".sales-arrow"),
     prevArrow:'<div class="prev-arrow"><img src="/assets/images/Arrow_right.svg" alt=""></div>',
     nextArrow:'<div class="next-arrow"><img src="/assets/images/Arrow_left.svg" alt=""></div>',
-    
-    
-
+  });
+$(".slick-cert").slick({
+    dots:false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    appendArrows:  $(".certificate-arrow"),
+    prevArrow:'<div class="prev-arrow"><img src="/assets/images/Arrow_right.svg" alt=""></div>',
+    nextArrow:'<div class="next-arrow"><img src="/assets/images/Arrow_left.svg" alt=""></div>',
+  });
+  $(".slick-reviews").slick({
+    dots:false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    appendArrows:  $(".reviews-arrow"),
+    prevArrow:'<div class="prev-arrow"><img src="/assets/images/Arrow_right.svg" alt=""></div>',
+    nextArrow:'<div class="next-arrow"><img src="/assets/images/Arrow_left.svg" alt=""></div>',
   });
 
 
@@ -47,65 +64,6 @@ $(".slick-carousel").slick({
 });
 
 
-// const time = 3000;
-// const step = 16;
-
-// function number (num,elem){
-//     let l = document.querySelector('#' + elem);
-//     n = 0;
-//     let t = Math.round(time/(num/step));
-//     let interval = setInterval(() =>{
-//         n = n + step;
-//         if (n == num) {
-//             clearInterval(interval);
-//         }
-//         l.innerHTML = n;
-//     },
-//           t); 
-// }
-
-// number(2016, 'number1');
-
-
-// const time = 3000;
-// const step = 16;
-// let hasAnimated = false;
-
-// function number(num, elem) {
-//     let l = document.querySelector('#' + elem);
-//     let n = 0;
-//     let t = Math.round(time / (num / step));
-//     let interval = setInterval(() => {
-//         n = n + step;
-//         if (n >= num) {
-//             clearInterval(interval);
-//             n = num; // Ensure the final number is correct
-//         }
-//         l.innerHTML = n;
-//     }, t);
-// }
-
-// function isElementInViewport(el) {
-//     const rect = el.getBoundingClientRect();
-//     return (
-//         rect.top >= 0 &&
-//         rect.left >= 0 &&
-//         rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
-//         rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-//     );
-// }
-
-// function onScroll() {
-//     const element = document.getElementById('number1');
-//     if (isElementInViewport(element) && !hasAnimated) {
-//         hasAnimated = true;
-//         number(2016, 'number1');
-//     }
-// }
-
-// window.addEventListener('scroll', onScroll);
-// // Проверка при загрузке страницы, если элемент уже в зоне видимости
-// document.addEventListener('DOMContentLoaded', onScroll);
 
 
 

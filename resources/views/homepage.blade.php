@@ -209,7 +209,7 @@
 
     <div class="container" style="margin-top:35px">
         <div class="slick-carousel">
-            <div class=" flex-column custom-slide">
+            <div class=" custom-slide">
                 <div class="stick-sale">Sale</div>
                 <div class="stick-new">New</div>
                 <div class="stick-favorite"><img src="{{ asset('/assets/images/Favorite.svg') }}" alt="">
@@ -581,6 +581,7 @@
     <div class="container" style="margin-top: 100px">
         <div class="stage">
             <p>Этапы работы</p>
+
             <div class="row work-stages justify-content-between">
                 <div class="col-lg-4 stages-card">
                     <img src="{{ asset('/assets/images/card-stages.png') }}" alt="">
@@ -611,99 +612,260 @@
         <div class="sales-header">
             <div class="row justify-content-between">
                 <div class=" col-9 d-flex">
-                    <p>Лидеры продаж</p>
+                    <p>Наши сертификаты</p>
                 </div>
-                <div class=" col-3 sales-arroww  text-end d-flex">
+                <div class=" col-3 certificate-arrow  justify-content-end d-flex">
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="container">
-        <div class="slick-carousel">
-            <div class=" flex-column custom-slide">
-                <div class="stick-sale">Sale</div>
-                <div class="stick-new">New</div>
-                <div class="stick-favorite"><img src="{{ asset('/assets/images/Favorite.svg') }}" alt="">
-                </div>
-                <button class="stick-view-btn">Быстрый просмотр</button>
-                <img class="productimage" src="{{ asset('/assets/images/Rectangle 1.svg') }}" alt="">
-                <p class="product-title">Dimond 18мл голубой </p>
-                <div class="description">
-                    <p class="product-descript">Ночной / Апельсин / Зима / Осень</p>
-                    <button class="product-btn">Узнать цену</button>
-                </div>
+    <div class="container" style="margin-top:35px">
+        <div class="slick-cert">
+            <div class="our-certif">
+                <button><img src="{{ asset('/assets/images/Search_cert.svg') }}" alt=""></button>
+                <img src="{{ asset('/assets/images/certificate 1.png') }}" alt="">
             </div>
-            <div class="custom-slide">
-                <div class="stick-sale">Sale</div>
-                <div class="stick-favorite"><img src="{{ asset('/assets/images/Favorite.svg') }}" alt="">
-                </div>
-                <button class="stick-view-btn">Быстрый просмотр</button>
-                <img class="productimage" src="{{ asset('/assets/images/Rectangle 2.svg') }}" alt="">
-                <p class="product-title">Shermadini House(LAB parfum) №159 (100мл)</p>
-                <div class="description">
-                    <p class="product-descript">Ночной / Апельсин / Зима / Осень</p>
-                    <button class="product-btn">Узнать цену</button>
-                </div>
+            <div class="our-certif">
+                <button><img src="{{ asset('/assets/images/Search_cert.svg') }}" alt=""></button>
+                <img src="{{ asset('/assets/images/certificate 2.png') }}" alt="">
             </div>
-            <div class="custom-slide">
-                <div class="stick-sale">Sale</div>
-                <div class="stick-favorite"><img src="{{ asset('/assets/images/Favorite.svg') }}" alt="">
-                </div>
-                <button class="stick-view-btn">Быстрый просмотр</button>
-                <img class="productimage" src="{{ asset('/assets/images/Rectangle 2.svg') }}" alt="">
-                <p class="product-title">Shermadini House(LAB parfum) №159 (100мл)</p>
-                <div class="description">
-                    <p class="product-descript">Ночной / Апельсин / Зима / Осень</p>
-                    <button class="product-btn">Узнать цену</button>
-                </div>
+            <div class="our-certif">
+                <button><img src="{{ asset('/assets/images/Search_cert.svg') }}" alt=""></button>
+                <img src="{{ asset('/assets/images/certificate 3.png') }}" alt="">
             </div>
-            <div class="custom-slide">
-                <div class="stick-sale">Sale</div>
-                <div class="stick-favorite"><img src="{{ asset('/assets/images/Favorite.svg') }}" alt="">
-                </div>
-                <button class="stick-view-btn">Быстрый просмотр</button>
-                <img class="productimage" src="{{ asset('/assets/images/Rectangle 2.svg') }}" alt="">
-                <p class="product-title">Shermadini House(LAB parfum) №159 (100мл)</p>
-                <div class="description">
-                    <p class="product-descript">Ночной / Апельсин / Зима / Осень</p>
-                    <button class="product-btn">Узнать цену</button>
-                </div>
+            <div class="our-certif">
+                <button><img src="{{ asset('/assets/images/Search_cert.svg') }}" alt=""></button>
+                <img src="{{ asset('/assets/images/certificate 1.png') }}" alt="">
             </div>
-            <div class="custom-slide">
-                <div class="stick-sale">Sale</div>
-                <div class="stick-favorite"><img src="{{ asset('/assets/images/Favorite.svg') }}" alt="">
-                </div>
-                <button class="stick-view-btn">Быстрый просмотр</button>
-                <img class="productimage" src="{{ asset('/assets/images/Rectangle 2.svg') }}" alt="">
-                <p class="product-title">Shermadini House(LAB parfum) №159 (100мл)</p>
-                <div class="description">
-                    <p class="product-descript">Ночной / Апельсин / Зима / Осень</p>
-                    <button class="product-btn">Узнать цену</button>
-                </div>
+            <div class="our-certif">
+                <button><img src="{{ asset('/assets/images/Search_cert.svg') }}" alt=""></button>
+                <img src="{{ asset('/assets/images/certificate 2.png') }}" alt="">
             </div>
-            <div class="custom-slide">
-                <div class="stick-sale">Sale</div>
-                <div class="stick-favorite"><img src="{{ asset('/assets/images/Favorite.svg') }}" alt="">
-                </div>
-                <button class="stick-view-btn">Быстрый просмотр</button>
-                <img class="productimage" src="{{ asset('/assets/images/Rectangle 2.svg') }}" alt="">
-                <p class="product-title">Shermadini House(LAB parfum) №159 (100мл)</p>
-                <div class="description">
-                    <p class="product-descript">Ночной / Апельсин / Зима / Осень</p>
-                    <button class="product-btn">Узнать цену</button>
-                </div>
+            <div class="our-certif">
+                <button><img src="{{ asset('/assets/images/Search_cert.svg') }}" alt=""></button>
+                <img src="{{ asset('/assets/images/certificate 3.png') }}" alt="">
+            </div>
+            <div class="our-certif">
+                <button><img src="{{ asset('/assets/images/Search_cert.svg') }}" alt=""></button>
+                <img src="{{ asset('/assets/images/certificate 1.png') }}" alt="">
             </div>
         </div>
     </div>
 
     {{-- end --}}
 
+    {{-- Отзывы --}}
+
+    {{-- start --}}
+    <div class="container" style="margin-top:104px">
+        <div class="sales-header">
+            <div class="row justify-content-between">
+                <div class=" col-9 d-flex">
+                    <p>Отзывы наших клиентов</p>
+                </div>
+                <div class=" col-3 reviews-arrow  justify-content-end d-flex">
+                </div>
+            </div>
+        </div>
+    </div>
 
 
+    <div class="container" style="margin-top: 50px">
+        <div class="slick-reviews">
+            <div class="reviews-card">
+                <div class="avatar">О</div>
+                <div class="review-title">
+                    <p>Ольга Иванова</p>
+                    г.Москва
+                </div>
+                <p>Посылка пришла через неделю после оформления заказа.
+                    Упаковка была целой, флаконы не повреждены. Но когда я открыла их,
+                    то почувствовала резкий химический запах. Он был настолько сильным, что у меня даже закружилась
+                    голова.
+                    На следующий день я решила проверить ароматы ещё раз. К моему удивлению, они пахли совсем иначе!
+                    Правда, было ощущение, что я нюхаю духи, которым уже несколько лет. Ароматы были плоскими и быстро
+                    исчезали.
+                    Я расстроилась, потому что потратила деньги зря. Больше я никогда не куплю наливную парфюмерию.
+                </p>
+            </div>
+
+            <div class="reviews-card">
+                <div class="avatar" style="background-color: #00FFFF; color:black">Р</div>
+                <div class="review-title">
+                    <p>Раиса Шевцова</p>
+                    г. Челябинск
+                </div>
+                <p>Посылка пришла через неделю после оформления заказа.
+                    Упаковка была целой, флаконы не повреждены. Но когда я открыла их,
+                    то почувствовала резкий химический запах. Он был настолько сильным, что у меня даже закружилась
+                    голова.
+                    На следующий день я решила проверить ароматы ещё раз. К моему удивлению, они пахли совсем иначе!
+                    Правда, было ощущение, что я нюхаю духи, которым уже несколько лет. Ароматы были плоскими и быстро
+                    исчезали.
+                    Я расстроилась, потому что потратила деньги зря. Больше я никогда не куплю наливную парфюмерию.
+                </p>
+            </div>
+
+            <div class="reviews-card">
+                <div class="avatar">О</div>
+                <div class="review-title">
+                    <p>Екатерина Артемьева</p>
+                    г. Челябинск
+                </div>
+                <p>Посылка пришла через неделю после оформления заказа.
+                    Упаковка была целой, флаконы не повреждены. Но когда я открыла их,
+                    то почувствовала резкий химический запах. Он был настолько сильным, что у меня даже закружилась
+                    голова.
+                    На следующий день я решила проверить ароматы ещё раз. К моему удивлению, они пахли совсем иначе!
+                    Правда, было ощущение, что я нюхаю духи, которым уже несколько лет. Ароматы были плоскими и быстро
+                    исчезали.
+                    Я расстроилась, потому что потратила деньги зря. Больше я никогда не куплю наливную парфюмерию.
+                </p>
+            </div>
+
+            <div class="reviews-card">
+                <div class="avatar">О</div>
+                <div class="review-title">
+                    <p>Ольга Иванова</p>
+                    г.Москва
+                </div>
+                <p>Посылка пришла через неделю после оформления заказа.
+                    Упаковка была целой, флаконы не повреждены. Но когда я открыла их,
+                    то почувствовала резкий химический запах. Он был настолько сильным, что у меня даже закружилась
+                    голова.
+                    На следующий день я решила проверить ароматы ещё раз. К моему удивлению, они пахли совсем иначе!
+                    Правда, было ощущение, что я нюхаю духи, которым уже несколько лет. Ароматы были плоскими и быстро
+                    исчезали.
+                    Я расстроилась, потому что потратила деньги зря. Больше я никогда не куплю наливную парфюмерию.
+                </p>
+            </div>
+
+            <div class="reviews-card">
+                <div class="avatar" style="background-color: #00FFFF; color:black">О</div>
+                <div class="review-title">
+                    <p>Ольга Иванова</p>
+                    г.Москва
+                </div>
+                <p>Посылка пришла через неделю после оформления заказа.
+                    Упаковка была целой, флаконы не повреждены. Но когда я открыла их,
+                    то почувствовала резкий химический запах. Он был настолько сильным, что у меня даже закружилась
+                    голова.
+                    На следующий день я решила проверить ароматы ещё раз. К моему удивлению, они пахли совсем иначе!
+                    Правда, было ощущение, что я нюхаю духи, которым уже несколько лет. Ароматы были плоскими и быстро
+                    исчезали.
+                    Я расстроилась, потому что потратила деньги зря. Больше я никогда не куплю наливную парфюмерию.
+                </p>
+            </div>
+
+            <div class="reviews-card">
+                <div class="avatar">О</div>
+                <div class="review-title">
+                    <p>Ольга Иванова</p>
+                    г.Москва
+                </div>
+                <p>Посылка пришла через неделю после оформления заказа.
+                    Упаковка была целой, флаконы не повреждены. Но когда я открыла их,
+                    то почувствовала резкий химический запах. Он был настолько сильным, что у меня даже закружилась
+                    голова.
+                    На следующий день я решила проверить ароматы ещё раз. К моему удивлению, они пахли совсем иначе!
+                    Правда, было ощущение, что я нюхаю духи, которым уже несколько лет. Ароматы были плоскими и быстро
+                    исчезали.
+                    Я расстроилась, потому что потратила деньги зря. Больше я никогда не куплю наливную парфюмерию.
+                </p>
+            </div>
+
+            <div class="reviews-card">
+                <div class="avatar">О</div>
+                <div class="review-title">
+                    <p>Ольга Иванова</p>
+                    г.Москва
+                </div>
+                <p>Посылка пришла через неделю после оформления заказа.
+                    Упаковка была целой, флаконы не повреждены. Но когда я открыла их,
+                    то почувствовала резкий химический запах. Он был настолько сильным, что у меня даже закружилась
+                    голова.
+                    На следующий день я решила проверить ароматы ещё раз. К моему удивлению, они пахли совсем иначе!
+                    Правда, было ощущение, что я нюхаю духи, которым уже несколько лет. Ароматы были плоскими и быстро
+                    исчезали.
+                    Я расстроилась, потому что потратила деньги зря. Больше я никогда не куплю наливную парфюмерию.
+                </p>
+            </div>
+
+            <div class="reviews-card" style="background-color: #00FFFF; color:black">
+                <div class="avatar">О</div>
+                <div class="review-title">
+                    <p>Ольга Иванова</p>
+                    г.Москва
+                </div>
+                <p>Посылка пришла через неделю после оформления заказа.
+                    Упаковка была целой, флаконы не повреждены. Но когда я открыла их,
+                    то почувствовала резкий химический запах. Он был настолько сильным, что у меня даже закружилась
+                    голова.
+                    На следующий день я решила проверить ароматы ещё раз. К моему удивлению, они пахли совсем иначе!
+                    Правда, было ощущение, что я нюхаю духи, которым уже несколько лет. Ароматы были плоскими и быстро
+                    исчезали.
+                    Я расстроилась, потому что потратила деньги зря. Больше я никогда не куплю наливную парфюмерию.
+                </p>
+            </div>
+
+            <div class="reviews-card">
+                <div class="avatar">О</div>
+                <div class="review-title">
+                    <p>Ольга Иванова</p>
+                    г.Москва
+                </div>
+                <p>Посылка пришла через неделю после оформления заказа.
+                    Упаковка была целой, флаконы не повреждены. Но когда я открыла их,
+                    то почувствовала резкий химический запах. Он был настолько сильным, что у меня даже закружилась
+                    голова.
+                    На следующий день я решила проверить ароматы ещё раз. К моему удивлению, они пахли совсем иначе!
+                    Правда, было ощущение, что я нюхаю духи, которым уже несколько лет. Ароматы были плоскими и быстро
+                    исчезали.
+                    Я расстроилась, потому что потратила деньги зря. Больше я никогда не куплю наливную парфюмерию.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="btn-center">
+        <div class="avter-reviews-btn">
+            <button style="margin-right: 30px">Оставить отзыв</button>
+            <button>См. все отзывы</button>
+        </div>
+    </div>
+
+    <div class="container" style="margin-bottom: 100px">
+        <div class="row justify-content-between ">
+            <div class="col-lg-4 last-cards">
+                <img src="{{asset('/assets/images/last_cards .png')}}" alt="">
+                <p>Оригальное сырье из <br> Франции</p>
+            </div>
+            <div class="col-lg-4 last-cards">
+                <img src="{{asset('/assets/images/last-cards  2.png')}}" alt="">
+                <p>Сертифицированное <br>производство</p>
+                
+            </div>
+            <div class="col-lg-4 last-cards">
+                <img src="{{asset('/assets/images/last-cards  3.png')}}" alt="">
+                <p>Бесплатные <br>пробники</p>
+
+            </div>
+        </div>
+    </div>
+
+    
     {{-- end --}}
-
+    
+    {{-- end --}}
+    
     <footer>
+        <div class="last-arrow">
+            <button>
+            <img src="{{asset('/assets/images/last-arrow.png')}}" alt="">
+        </button>
+        </div>
         <div class="container justify-content-between ">
             <div class="row justify-content-between align-items-start footer-catalog ">
 
@@ -735,7 +897,8 @@
                 <div class="col-3 footer-content d-flex flex-column">
                     <p class="footer-title">О нас</p>
                     <p style="opacity: 0.75">Производсто и Оптовая продажа Парфюма и Флаконов по России и СНГ </p>
-                    <p style="opacity: 0.75">Достовляем закакзы в любой город России, Беларуси,Казахстана и Армении</p>
+                    <p style="opacity: 0.75">Достовляем закакзы в любой город России, Беларуси,Казахстана и Армении
+                    </p>
                     <div class="footer-contact-ic d-flex justify-content-between" style="margin-top: 56px">
                         <a href="" class="footer-ic">
                             <div class="vk"></div>
