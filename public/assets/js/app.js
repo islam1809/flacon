@@ -1,3 +1,8 @@
+function hide(){
+    document.getElementById('discount').style.display="none";
+    
+}
+
 
 $(".slick-carousel").slick({
     dots:false,
@@ -65,6 +70,29 @@ $(".slick-cert").slick({
 
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    var element = document.getElementById('selector');
+    
+    IMask(element, {
+        mask: '+{7}(000)000-00-00',
+        lazy: false,  
+        placeholderChar: '_',
+        prepare: function (str) {
+            if (!str) return str;
+            if (str.includes('_')) {
+                element.style.color = 'rgba(0, 0, 0, 0.5)';
+            } else {
+                element.style.color = 'initial';
+            }
+            return str;
+        }
+    });
+
+    // Явное применение стиля через JavaScript
+    element.style.color = 'rgba(0, 0, 0, 0.5)';
+});
+
+
 
 
 
@@ -117,4 +145,29 @@ window.addEventListener('scroll', onScroll);
 
 
 
-  
+  function isInViewport(element) {
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.top >= 0 &&
+        rect.left >= 0 &&
+        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+}
+
+function handleScroll() {
+    const pins = document.querySelectorAll('.pin');
+    pins.forEach((pin, index) => {
+        setTimeout(() => {
+            if (isInViewport(pin)) {
+                pin.style.opacity = '1';
+                pin.style.transform = 'translateY(0)';
+            }
+        }, index * 380); 
+    });
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    window.addEventListener('scroll', handleScroll);
+    handleScroll(); 
+});

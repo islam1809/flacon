@@ -6,19 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Flacon</title>
+    <script src="https://unpkg.com/imask"></script>
     <link rel="stylesheet" href="{{ asset('/assets/css/bootstrap.min.css') }}">
     <link rel="stylesheet" href="{{ asset('/assets/css/style.css') }}">
     <link rel="stylesheet" href="{{ asset('/assets/slick-1.8.1/slick/slick.css') }}">
 
 
+
 </head>
 
 <body>
-    <div class="discount " style="  background-color: #FF0080; padding:15px 0px 10px 0px;">
+    <div class="discount" id="discount" style="  background-color: #FF0080; padding:15px 0px 10px 0px;">
         <div class="container d-flex justify-content-between align-items-center">
             <p>Только до конца месяца <span style="font-family:suisseintl-bold">скидка 20%</span> на все
                 наливные духи</p>
-            <button class="btn p-0" style="background: none; border: none;"> <img
+            <button class="btn p-0" id="hide" onclick="hide()" style="background: none; border: none;"> <img
                     src="{{ asset('/assets/images/cross.png') }}" alt="Close" style="width: 24px; height: 24px;">
             </button>
         </div>
@@ -207,14 +209,39 @@
         </div>
     </div>
 
+
+{{-- Modal window --}}
+{{-- start --}}
     <div class="container" style="margin-top:35px">
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog modal-xl">
+                        <div class="modal-content">
+                            {{-- <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div> --}}
+                            <div class="modal-body">
+                                ...
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary"
+                                    data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+{{-- end --}}
+
         <div class="slick-carousel">
             <div class=" custom-slide">
                 <div class="stick-sale">Sale</div>
                 <div class="stick-new">New</div>
                 <div class="stick-favorite"><img src="{{ asset('/assets/images/Favorite.svg') }}" alt="">
                 </div>
-                <button class="stick-view-btn">Быстрый просмотр</button>
+                <button class="stick-view-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"> Быстрый просмотр</button>
                 <img class="productimage" src="{{ asset('/assets/images/Rectangle 1.svg') }}" alt="">
                 <p class="product-title">Dimond 18мл голубой </p>
                 <div class="description">
@@ -346,7 +373,8 @@
             <div class="form">
                 <form action="">
                     <label for="">Введите ваш номер телефона</label>
-                    <input type="tel" placeholder="+7 (___) ___-__-__" maxlength="18">
+                    <input id="selector" class="selector" type="tel" placeholder="+ (___) ___-__-__"
+                        maxlength="18">
                     <label for="">Куда прислать каталог?</label>
                     <div class="messangers-trig ">
                         <div class="custom-trigger d-flex justify-content-between">
@@ -570,6 +598,11 @@
 
             <div class="col-6 map-img justify-content-end ">
                 <img src="{{ asset('/assets/images/map.png') }}" alt="">
+                <img class="pin pinsimg1" src="{{ asset('/assets/images/Pin_fill.svg') }}" alt="">
+                <img class="pin pinsimg2" src="{{ asset('/assets/images/Pin_fill.svg') }}" alt="">
+                <img class="pin pinsimg3" src="{{ asset('/assets/images/Pin_fill.svg') }}" alt="">
+                <img class="pin pinsimg4" src="{{ asset('/assets/images/Pin_fill.svg') }}" alt="">
+                <img class="pin pinsimg5" src="{{ asset('/assets/images/Pin_fill.svg') }}" alt="">
             </div>
         </div>
     </div>
@@ -624,30 +657,37 @@
         <div class="slick-cert">
             <div class="our-certif">
                 <button><img src="{{ asset('/assets/images/Search_cert.svg') }}" alt=""></button>
+                <div class="overlay"></div>
                 <img src="{{ asset('/assets/images/certificate 1.png') }}" alt="">
             </div>
             <div class="our-certif">
                 <button><img src="{{ asset('/assets/images/Search_cert.svg') }}" alt=""></button>
+                <div class="overlay"></div>
                 <img src="{{ asset('/assets/images/certificate 2.png') }}" alt="">
             </div>
             <div class="our-certif">
                 <button><img src="{{ asset('/assets/images/Search_cert.svg') }}" alt=""></button>
+                <div class="overlay"></div>
                 <img src="{{ asset('/assets/images/certificate 3.png') }}" alt="">
             </div>
             <div class="our-certif">
                 <button><img src="{{ asset('/assets/images/Search_cert.svg') }}" alt=""></button>
+                <div class="overlay"></div>
                 <img src="{{ asset('/assets/images/certificate 1.png') }}" alt="">
             </div>
             <div class="our-certif">
                 <button><img src="{{ asset('/assets/images/Search_cert.svg') }}" alt=""></button>
+                <div class="overlay"></div>
                 <img src="{{ asset('/assets/images/certificate 2.png') }}" alt="">
             </div>
             <div class="our-certif">
                 <button><img src="{{ asset('/assets/images/Search_cert.svg') }}" alt=""></button>
+                <div class="overlay"></div>
                 <img src="{{ asset('/assets/images/certificate 3.png') }}" alt="">
             </div>
             <div class="our-certif">
                 <button><img src="{{ asset('/assets/images/Search_cert.svg') }}" alt=""></button>
+                <div class="overlay"></div>
                 <img src="{{ asset('/assets/images/certificate 1.png') }}" alt="">
             </div>
         </div>
@@ -839,32 +879,32 @@
     <div class="container" style="margin-bottom: 100px">
         <div class="row justify-content-between ">
             <div class="col-lg-4 last-cards">
-                <img src="{{asset('/assets/images/last_cards .png')}}" alt="">
+                <img src="{{ asset('/assets/images/last_cards .png') }}" alt="">
                 <p>Оригальное сырье из <br> Франции</p>
             </div>
             <div class="col-lg-4 last-cards">
-                <img src="{{asset('/assets/images/last-cards  2.png')}}" alt="">
+                <img src="{{ asset('/assets/images/last-cards  2.png') }}" alt="">
                 <p>Сертифицированное <br>производство</p>
-                
+
             </div>
             <div class="col-lg-4 last-cards">
-                <img src="{{asset('/assets/images/last-cards  3.png')}}" alt="">
+                <img src="{{ asset('/assets/images/last-cards  3.png') }}" alt="">
                 <p>Бесплатные <br>пробники</p>
 
             </div>
         </div>
     </div>
 
-    
+
     {{-- end --}}
-    
+
     {{-- end --}}
-    
+
     <footer>
         <div class="last-arrow">
             <button>
-            <img src="{{asset('/assets/images/last-arrow.png')}}" alt="">
-        </button>
+                <img src="{{ asset('/assets/images/last-arrow.png') }}" alt="">
+            </button>
         </div>
         <div class="container justify-content-between ">
             <div class="row justify-content-between align-items-start footer-catalog ">
@@ -944,11 +984,13 @@
         </div>
     </footer>
 
+
     <script src="{{ asset('/assets/js/jquery.min.js') }}"></script>
     <script src="{{ asset('/assets/js/bootstrap.min.js') }}"></script>
     <script src="{{ asset('/assets/js/popper.min.js') }}"></script>
     <script src="{{ asset('/assets/slick-1.8.1/slick/slick.min.js') }}"></script>
     <script src="{{ asset('/assets/js/app.js') }}"></script>
+
 
 
 </body>
