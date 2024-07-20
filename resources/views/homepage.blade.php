@@ -210,38 +210,84 @@
     </div>
 
 
-{{-- Modal window --}}
-{{-- start --}}
-    <div class="container" style="margin-top:35px">
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-                    aria-hidden="true">
-                    <div class="modal-dialog modal-xl">
-                        <div class="modal-content">
-                            {{-- <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div> --}}
-                            <div class="modal-body">
-                                ...
+    {{-- Slick Modal window --}}
+    {{-- start --}}
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body" style="padding: 30px 30px 40px">
+                    <div class="row modal-window">
+                        <div class="slick-modal modal-parfum">
+                            
+                            <div class="slide-modal">
+                                <img class="modal-productimage" src="{{ asset('/assets/images/Rectangle 1.svg') }}"
+                                alt="">
+                                <div class="modal-arrow"></div>
+                                <div class="stick-sale modal-sale">Sale</div>
+                                <div class="modal-new">New</div>
+                                <div class="stick-modal"><img src="{{ asset('/assets/images/Favorite.svg') }}"alt="">
+                                </div>
                             </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary"
-                                    data-bs-dismiss="modal">Close</button>
-                                <button type="button" class="btn btn-primary">Save changes</button>
+
+                            <div class="slide-modal">
+                                <img class="modal-productimage" src="{{ asset('/assets/images/Rectangle 1.svg') }}"
+                                    alt="">
+                                <div class="modal-arrow"></div>
+                                <div class="stick-sale modal-sale">Sale</div>
+                                <div class="modal-new">New</div>
+                                <div class="stick-modal"><img src="{{ asset('/assets/images/Favorite.svg') }}"
+                                        alt="">
+                                    </div>
+                                    <button class="modal-view-btn" data-bs-toggle="modal"data-bs-target="#exampleModal">
+                                        <img src="{{ asset('/assets/images/modal-view.svg') }}"alt="">
+                                </button>
+                            </div>
+                            <div class="slide-modal">
+                                <div class="modal-arrow"></div>
+                                <div class="stick-sale modal-sale">Sale</div>
+                                <div class="modal-new">New</div>
+                                <div class="stick-modal"><img src="{{ asset('/assets/images/Favorite.svg') }}"
+                                    alt="">
+                                </div>
+                                <button class="modal-view-btn"
+                                data-bs-toggle="modal"data-bs-target="#exampleModal"><img
+                                src="{{ asset('/assets/images/modal-view.svg') }}" alt=""></button>
+                                <img class="modal-productimage" src="{{ asset('/assets/images/Rectangle 1.svg') }}"
+                                alt="">
+                            </div>
+                            
+                        </div>
+                        <div class="arrow-modal"></div>
+
+                        <div class="slide-modal">
+                            <div class="stick-sale">Sale</div>
+                            <p class="product-title">Shermadini House(LAB parfum) №159 (100мл)</p>
+                            <div class="description">
+                                <p class="product-descript">Ночной / Апельсин / Зима / Осень</p>
+                                <button class="product-btn">Узнать цену</button>
+                                <p class="product-title">Dimond 18мл голубой </p>
                             </div>
                         </div>
+                        <button type="button" class="btn btn-secondary closeReviews" data-bs-dismiss="modal">
+                            <img src="{{ asset('/assets/images/btn-closeModal.png') }}" alt="">
+                        </button>
                     </div>
                 </div>
-{{-- end --}}
-
+            </div>
+        </div>
+    </div>
+    {{-- end --}}
+    
+    <div class="container" style="margin-top:35px">
         <div class="slick-carousel">
             <div class=" custom-slide">
                 <div class="stick-sale">Sale</div>
                 <div class="stick-new">New</div>
                 <div class="stick-favorite"><img src="{{ asset('/assets/images/Favorite.svg') }}" alt="">
                 </div>
-                <button class="stick-view-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"> Быстрый просмотр</button>
+                <button class="stick-view-btn" data-bs-toggle="modal" data-bs-target="#exampleModal"> Быстрый
+                    просмотр</button>
                 <img class="productimage" src="{{ asset('/assets/images/Rectangle 1.svg') }}" alt="">
                 <p class="product-title">Dimond 18мл голубой </p>
                 <div class="description">
@@ -654,39 +700,153 @@
     </div>
 
     <div class="container" style="margin-top:35px">
+        <!-- Первое модальное окно -->
+        <div class="modal fade" id="firstModal" tabindex="-1" aria-labelledby="firstModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="{{ asset('/assets/images/certificate 0.png') }}" class="img-fluid" alt="">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            <img src="{{ asset('/assets/images/btn-closeModal.png') }}" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Второе модальное окно -->
+        <div class="modal fade" id="secondModal" tabindex="-1" aria-labelledby="secondModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <img src="{{ asset('/assets/images/certificate 0.png') }}" class="img-fluid" alt="">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            <img src="{{ asset('/assets/images/btn-closeModal.png') }}" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="thirdModal" tabindex="-1" aria-labelledby="secondModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body ">
+                        <img src="{{ asset('/assets/images/certificate 0.png') }}" class="img-fluid" alt="">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            <img src="{{ asset('/assets/images/btn-closeModal.png') }}" alt="">
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="fourthModal" tabindex="-1" aria-labelledby="secondModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body ">
+                        <img src="{{ asset('/assets/images/certificate 0.png') }}" class="img-fluid" alt="">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            <img src="{{ asset('/assets/images/btn-closeModal.png') }}" alt="">
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="fivthModal" tabindex="-1" aria-labelledby="secondModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body ">
+                        <img src="{{ asset('/assets/images/certificate 0.png') }}" class="img-fluid" alt="">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            <img src="{{ asset('/assets/images/btn-closeModal.png') }}" alt="">
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="sixthModal" tabindex="-1" aria-labelledby="secondModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body ">
+                        <img src="{{ asset('/assets/images/certificate 0.png') }}" class="img-fluid" alt="">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            <img src="{{ asset('/assets/images/btn-closeModal.png') }}" alt="">
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="seventh" tabindex="-1" aria-labelledby="secondModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body ">
+                        <img src="{{ asset('/assets/images/certificate 0.png') }}" class="img-fluid" alt="">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+                            <img src="{{ asset('/assets/images/btn-closeModal.png') }}" alt="">
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+
         <div class="slick-cert">
             <div class="our-certif">
-                <button><img src="{{ asset('/assets/images/Search_cert.svg') }}" alt=""></button>
+                <button data-bs-toggle="modal" data-bs-target="#firstModal"><img
+                        src="{{ asset('/assets/images/Search_cert.svg') }}" alt=""></button>
                 <div class="overlay"></div>
                 <img src="{{ asset('/assets/images/certificate 1.png') }}" alt="">
             </div>
             <div class="our-certif">
-                <button><img src="{{ asset('/assets/images/Search_cert.svg') }}" alt=""></button>
+                <button data-bs-toggle="modal" data-bs-target="#secondModal"><img
+                        src="{{ asset('/assets/images/Search_cert.svg') }}" alt=""></button>
                 <div class="overlay"></div>
                 <img src="{{ asset('/assets/images/certificate 2.png') }}" alt="">
             </div>
             <div class="our-certif">
-                <button><img src="{{ asset('/assets/images/Search_cert.svg') }}" alt=""></button>
+                <button data-bs-toggle="modal" data-bs-target="#thirdModal"><img
+                        src="{{ asset('/assets/images/Search_cert.svg') }}" alt=""></button>
                 <div class="overlay"></div>
                 <img src="{{ asset('/assets/images/certificate 3.png') }}" alt="">
             </div>
             <div class="our-certif">
-                <button><img src="{{ asset('/assets/images/Search_cert.svg') }}" alt=""></button>
+                <button data-bs-toggle="modal" data-bs-target="#fourthModal"><img
+                        src="{{ asset('/assets/images/Search_cert.svg') }}" alt=""></button>
                 <div class="overlay"></div>
                 <img src="{{ asset('/assets/images/certificate 1.png') }}" alt="">
             </div>
             <div class="our-certif">
-                <button><img src="{{ asset('/assets/images/Search_cert.svg') }}" alt=""></button>
+                <button data-bs-toggle="modal" data-bs-target="#fivthModal"><img
+                        src="{{ asset('/assets/images/Search_cert.svg') }}" alt=""></button>
                 <div class="overlay"></div>
                 <img src="{{ asset('/assets/images/certificate 2.png') }}" alt="">
             </div>
             <div class="our-certif">
-                <button><img src="{{ asset('/assets/images/Search_cert.svg') }}" alt=""></button>
+                <button data-bs-toggle="modal" data-bs-target="#sixthModal"><img
+                        src="{{ asset('/assets/images/Search_cert.svg') }}" alt=""></button>
                 <div class="overlay"></div>
                 <img src="{{ asset('/assets/images/certificate 3.png') }}" alt="">
             </div>
             <div class="our-certif">
-                <button><img src="{{ asset('/assets/images/Search_cert.svg') }}" alt=""></button>
+                <button data-bs-toggle="modal" data-bs-target="#seventhModal"><img
+                        src="{{ asset('/assets/images/Search_cert.svg') }}" alt=""></button>
                 <div class="overlay"></div>
                 <img src="{{ asset('/assets/images/certificate 1.png') }}" alt="">
             </div>
@@ -702,7 +862,7 @@
         <div class="sales-header">
             <div class="row justify-content-between">
                 <div class=" col-9 d-flex">
-                    <p>Отзывы наших клиентов</p>
+                    <p>Отзывы клиентов</p>
                 </div>
                 <div class=" col-3 reviews-arrow  justify-content-end d-flex">
                 </div>
@@ -712,6 +872,63 @@
 
 
     <div class="container" style="margin-top: 50px">
+
+
+        {{-- reviews modal --}}
+        {{-- start --}}
+        <div class="modal fade" id="reviewsdModal" tabindex="-1" aria-labelledby="secondModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable custom-modal">
+                <div class="modal-content modal-con ">
+                    <div class="reviews-cardMod">
+                        <div class="avatarMod">О</div>
+                        <div class="review-titleMod">
+                            <p style="margin: 0">Ольга Иванова</p>
+                            г.Москва
+                        </div>
+                    </div>
+                    <div class="modal-body modalReviews">
+                        <p>Посылка пришла через неделю после оформления заказа. Упаковка была целой, флаконы не
+                            повреждены. Но когда я открыла их, то почувствовала резкий химический запах. Он был
+                            настолько сильным, что у меня даже закружилась голова. На следующий день я решила проверить
+                            ароматы ещё раз. К моему удивлению, они пахли совсем иначе! Правда, было ощущение, что я
+                            нюхаю духи, которым уже несколько лет. Ароматы были плоскими и быстро исчезали. Я
+                            расстроилась, потому что потратила деньги зря. Больше я никогда не куплю наливную
+                            парфюмерию. Я давно хотела попробовать наливную парфюмерию, но всё не решалась. Подруга
+                            уговорила меня сделать заказ в одном популярном интернет-магазине. Она сказала, что там
+                            очень большой выбор ароматов и можно купить отливант любого объёма. Я долго сомневалась, но
+                            потом решилась заказать два аромата по 10 мл.
+
+                            Посылка пришла через неделю после оформления заказа. Упаковка была целой, флаконы не
+                            повреждены. Но когда я открыла их, то почувствовала резкий химический запах. Он был
+                            настолько сильным, что у меня даже закружилась голова. На следующий день я решила проверить
+                            ароматы ещё раз. К моему удивлению, они пахли совсем иначе! Правда, было ощущение, что я
+                            нюхаю духи, которым уже несколько лет. Ароматы были плоскими и быстро исчезали. Я
+                            расстроилась, потому что потратила деньги зря. Больше я никогда не куплю наливную
+                            парфюмерию. Я давно хотела попробовать наливную парфюмерию, но всё не решалась. Подруга
+                            уговорила меня сделать заказ в одном популярном интернет-магазине. Она сказала, что там
+                            очень большой выбор ароматов и можно купить отливант любого объёма. Я долго сомневалась, но
+                            потом решилась заказать два аромата по 10 мл.
+                        </p>
+                    </div>
+                    <button type="button" class="btn btn-secondary closeReviews" data-bs-dismiss="modal">
+                        <img src="{{ asset('/assets/images/btn-closeModal.png') }}" alt="">
+                    </button>
+
+                    <div class="reviewButtons ">
+                        <button class="reviewsButton">
+                            Оставить отзыв
+                        </button>
+
+                        <button class="reviewsButton">
+                            СМ. все отзывы
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{-- end --}}
+
         <div class="slick-reviews">
             <div class="reviews-card">
                 <div class="avatar">О</div>
@@ -724,10 +941,12 @@
                     то почувствовала резкий химический запах. Он был настолько сильным, что у меня даже закружилась
                     голова.
                     На следующий день я решила проверить ароматы ещё раз. К моему удивлению, они пахли совсем иначе!
-                    Правда, было ощущение, что я нюхаю духи, которым уже несколько лет. Ароматы были плоскими и быстро
+                    Правда, было ощущение, что я нюхаю духи, которым уже несколько лет. Ароматы были плоскими и
+                    быстро
                     исчезали.
                     Я расстроилась, потому что потратила деньги зря. Больше я никогда не куплю наливную парфюмерию.
                 </p>
+                <button data-bs-toggle="modal" data-bs-target="#reviewsdModal"> Читать полностью</button>
             </div>
 
             <div class="reviews-card">
@@ -741,10 +960,12 @@
                     то почувствовала резкий химический запах. Он был настолько сильным, что у меня даже закружилась
                     голова.
                     На следующий день я решила проверить ароматы ещё раз. К моему удивлению, они пахли совсем иначе!
-                    Правда, было ощущение, что я нюхаю духи, которым уже несколько лет. Ароматы были плоскими и быстро
+                    Правда, было ощущение, что я нюхаю духи, которым уже несколько лет. Ароматы были плоскими и
+                    быстро
                     исчезали.
                     Я расстроилась, потому что потратила деньги зря. Больше я никогда не куплю наливную парфюмерию.
                 </p>
+                <button data-bs-toggle="modal" data-bs-target="#reviewsdModal"> Читать полностью</button>
             </div>
 
             <div class="reviews-card">
@@ -758,10 +979,12 @@
                     то почувствовала резкий химический запах. Он был настолько сильным, что у меня даже закружилась
                     голова.
                     На следующий день я решила проверить ароматы ещё раз. К моему удивлению, они пахли совсем иначе!
-                    Правда, было ощущение, что я нюхаю духи, которым уже несколько лет. Ароматы были плоскими и быстро
+                    Правда, было ощущение, что я нюхаю духи, которым уже несколько лет. Ароматы были плоскими и
+                    быстро
                     исчезали.
                     Я расстроилась, потому что потратила деньги зря. Больше я никогда не куплю наливную парфюмерию.
                 </p>
+                <button data-bs-toggle="modal" data-bs-target="#reviewsdModal"> Читать полностью</button>
             </div>
 
             <div class="reviews-card">
@@ -775,10 +998,12 @@
                     то почувствовала резкий химический запах. Он был настолько сильным, что у меня даже закружилась
                     голова.
                     На следующий день я решила проверить ароматы ещё раз. К моему удивлению, они пахли совсем иначе!
-                    Правда, было ощущение, что я нюхаю духи, которым уже несколько лет. Ароматы были плоскими и быстро
+                    Правда, было ощущение, что я нюхаю духи, которым уже несколько лет. Ароматы были плоскими и
+                    быстро
                     исчезали.
                     Я расстроилась, потому что потратила деньги зря. Больше я никогда не куплю наливную парфюмерию.
                 </p>
+                <button data-bs-toggle="modal" data-bs-target="#reviewsdModal"> Читать полностью</button>
             </div>
 
             <div class="reviews-card">
@@ -792,10 +1017,12 @@
                     то почувствовала резкий химический запах. Он был настолько сильным, что у меня даже закружилась
                     голова.
                     На следующий день я решила проверить ароматы ещё раз. К моему удивлению, они пахли совсем иначе!
-                    Правда, было ощущение, что я нюхаю духи, которым уже несколько лет. Ароматы были плоскими и быстро
+                    Правда, было ощущение, что я нюхаю духи, которым уже несколько лет. Ароматы были плоскими и
+                    быстро
                     исчезали.
                     Я расстроилась, потому что потратила деньги зря. Больше я никогда не куплю наливную парфюмерию.
                 </p>
+                <button data-bs-toggle="modal" data-bs-target="#reviewsdModal"> Читать полностью</button>
             </div>
 
             <div class="reviews-card">
@@ -809,10 +1036,12 @@
                     то почувствовала резкий химический запах. Он был настолько сильным, что у меня даже закружилась
                     голова.
                     На следующий день я решила проверить ароматы ещё раз. К моему удивлению, они пахли совсем иначе!
-                    Правда, было ощущение, что я нюхаю духи, которым уже несколько лет. Ароматы были плоскими и быстро
+                    Правда, было ощущение, что я нюхаю духи, которым уже несколько лет. Ароматы были плоскими и
+                    быстро
                     исчезали.
                     Я расстроилась, потому что потратила деньги зря. Больше я никогда не куплю наливную парфюмерию.
                 </p>
+                <button data-bs-toggle="modal" data-bs-target="#reviewsdModal"> Читать полностью</button>
             </div>
 
             <div class="reviews-card">
@@ -826,10 +1055,12 @@
                     то почувствовала резкий химический запах. Он был настолько сильным, что у меня даже закружилась
                     голова.
                     На следующий день я решила проверить ароматы ещё раз. К моему удивлению, они пахли совсем иначе!
-                    Правда, было ощущение, что я нюхаю духи, которым уже несколько лет. Ароматы были плоскими и быстро
+                    Правда, было ощущение, что я нюхаю духи, которым уже несколько лет. Ароматы были плоскими и
+                    быстро
                     исчезали.
                     Я расстроилась, потому что потратила деньги зря. Больше я никогда не куплю наливную парфюмерию.
                 </p>
+                <button data-bs-toggle="modal" data-bs-target="#reviewsdModal"> Читать полностью</button>
             </div>
 
             <div class="reviews-card" style="background-color: #00FFFF; color:black">
@@ -843,10 +1074,12 @@
                     то почувствовала резкий химический запах. Он был настолько сильным, что у меня даже закружилась
                     голова.
                     На следующий день я решила проверить ароматы ещё раз. К моему удивлению, они пахли совсем иначе!
-                    Правда, было ощущение, что я нюхаю духи, которым уже несколько лет. Ароматы были плоскими и быстро
+                    Правда, было ощущение, что я нюхаю духи, которым уже несколько лет. Ароматы были плоскими и
+                    быстро
                     исчезали.
                     Я расстроилась, потому что потратила деньги зря. Больше я никогда не куплю наливную парфюмерию.
                 </p>
+                <button data-bs-toggle="modal" data-bs-target="#reviewsdModal"> Читать полностью</button>
             </div>
 
             <div class="reviews-card">
@@ -860,10 +1093,12 @@
                     то почувствовала резкий химический запах. Он был настолько сильным, что у меня даже закружилась
                     голова.
                     На следующий день я решила проверить ароматы ещё раз. К моему удивлению, они пахли совсем иначе!
-                    Правда, было ощущение, что я нюхаю духи, которым уже несколько лет. Ароматы были плоскими и быстро
+                    Правда, было ощущение, что я нюхаю духи, которым уже несколько лет. Ароматы были плоскими и
+                    быстро
                     исчезали.
                     Я расстроилась, потому что потратила деньги зря. Больше я никогда не куплю наливную парфюмерию.
                 </p>
+                <button data-bs-toggle="modal" data-bs-target="#reviewsdModal"> Читать полностью</button>
             </div>
         </div>
     </div>
@@ -871,10 +1106,40 @@
 
     <div class="btn-center">
         <div class="avter-reviews-btn">
-            <button style="margin-right: 30px">Оставить отзыв</button>
+            <button type="button" class="" data-bs-toggle="modal" data-bs-target="#btnCentereModal"
+                data-bs-whatever="@mdo">
+                Оставить отзыв
+            </button>
             <button>См. все отзывы</button>
         </div>
     </div>
+
+    {{-- revierws Оставить отзыв --}}
+    {{-- start --}}
+    <div class="modal fade" id="btnCentereModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered ">
+            <div class="modal-content putreviews">
+                <div class="modal-body" style="padding: 0">
+                    <div class="avatarPut">О</div>
+                    <div class="review-titlePut">
+                        <p>Ольга Иванова</p>
+                        г.Москва
+                    </div>
+                    <textarea class="form-control" id="message-text" placeholder="Напишите ваш отзыв"></textarea>
+                </div>
+                <div class="modal-footer" style="padding: 0">
+                    <button type="button" class="btn btn-primary">Отправить</button>
+                </div>
+                <button type="button" class="btn btn-secondary closeReviews" data-bs-dismiss="modal">
+                    <img src="{{ asset('/assets/images/btn-closeModal.png') }}" alt="">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    {{-- end --}}
+
 
     <div class="container" style="margin-bottom: 100px">
         <div class="row justify-content-between ">
@@ -894,8 +1159,6 @@
             </div>
         </div>
     </div>
-
-
     {{-- end --}}
 
     {{-- end --}}

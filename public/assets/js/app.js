@@ -4,6 +4,24 @@ function hide(){
 }
 
 
+
+$('.slick-modal').slick({
+    appendArrows: $(".arrow-modal"),
+    prevArrow:'<div class="prev-arrow-modal"><img src="/assets/images/Arrow_right.svg" alt=""></div>',
+    nextArrow:'<div class="next-arrow-modal"><img src="/assets/images/Arrow_left.svg" alt=""></div>',
+});
+
+// $(".slick-modal").slick({
+//     dots:false,
+//     infinite: true,
+//     speed: 500,
+//     slidesToShow: 1,
+//     slidesToScroll: 1,
+//     appendArrows:  $(".arrow-modal"),
+//     prevArrow:'<div class="prev-arrow-modal"><img src="/assets/images/Arrow_right.svg" alt=""></div>',
+//     nextArrow:'<div class="next-arrow-modal"><img src="/assets/images/Arrow_left.svg" alt=""></div>',
+//   });
+
 $(".slick-carousel").slick({
     dots:false,
     infinite: true,
@@ -34,6 +52,8 @@ $(".slick-cert").slick({
     prevArrow:'<div class="prev-arrow"><img src="/assets/images/Arrow_right.svg" alt=""></div>',
     nextArrow:'<div class="next-arrow"><img src="/assets/images/Arrow_left.svg" alt=""></div>',
   });
+
+
 
 
   document.addEventListener('DOMContentLoaded', function () {
@@ -87,8 +107,6 @@ document.addEventListener('DOMContentLoaded', function() {
             return str;
         }
     });
-
-    // Явное применение стиля через JavaScript
     element.style.color = 'rgba(0, 0, 0, 0.5)';
 });
 

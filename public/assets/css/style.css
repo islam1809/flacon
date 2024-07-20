@@ -285,6 +285,300 @@ dropdown-item:focus,
 /* Body 
 start */
 
+/* Modal window */
+
+/* start */
+.slick-modal {
+    width: 470px;
+    height: 470px;
+}
+
+
+.slide-modal {
+    position: relative;
+    max-height: 540px;
+    margin-right: 20px;
+}
+
+.modal-productimage {
+    margin-right: 10px;
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.stick-modal {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.modal-sale {
+    position: absolute;
+    padding: 7px 14px 5px 14px;
+    color: white;
+    background-color: #FF0080;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    width: fit-content;
+    font-size: 13px;
+    top: 15px;
+    left: 0px;
+}
+
+.modal-new {
+    position: absolute;
+    padding: 7px 14px 5px 14px;
+    color: white;
+    background-color: black;
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+    width: fit-content;
+    font-size: 13px;
+    top: 52px;
+    left: 0;
+}
+
+.modal-view-btn {
+    position: absolute;
+    padding: 29px 26px;
+    top: 42%;
+    left: 43%;
+    border: none;
+    border-radius: 100px;
+    background-color: #00FFFF;
+}
+
+
+.close-btn-modal {
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    border: none;
+    right: 1px;
+    border: none;
+    border-radius: 100px;
+    background-color: #F1F4F9;
+}
+
+
+
+.modal-prev-arrow {
+    position: absolute;
+    top: 45%;
+    left: 5%;
+}
+
+.modal-next-arrow {
+    position: absolute;
+    top: 45%;
+    right: 5%;
+}
+.custom-modal{
+    height: 400px !important; 
+}
+
+ /* reviews modal scroolbar */
+/* start  */
+
+/* width */
+.modalReviews::-webkit-scrollbar {
+    width: 4px;
+    height: 50px !important;
+  }
+  
+  /* Track */
+  .modalReviews::-webkit-scrollbar-track {
+    background: #DCE1E9;
+  }
+  
+  /* Handle */
+  .modalReviews::-webkit-scrollbar-thumb {
+    background:  #9EA8BA;
+  }
+  
+  /* end */
+
+/* .modal-parfum{
+    position: relative;
+} */
+
+.arrow-modal{
+    position: absolute;
+    top: 32%;
+}
+
+.prev-arrow-modal.slick-arrow{
+    /* position: absolute;   */
+    top: 12%;
+    right: 44%;
+  }
+.next-arrow-modal.slick-arrow{
+    position: absolute;
+    top: 12%;
+    left: 34%;
+  }
+
+.modal-body {
+    width: 100%;
+    position: relative;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.modal-body .btn{
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    background-color: #F1F4F9 !important; 
+    border-radius: 50%;
+    border: none;
+    top: 1%;
+    right: 4%;
+    transition: all 0.3s ease-in-out;
+
+}
+
+
+.btn-secondary:hover{
+    transform: rotate(180deg);
+}
+
+
+.modal-body .btn img{
+    width: 23px;
+    height: 23px;
+}
+
+.btn-secondary:focus{
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+
+
+/* reviews modal section */
+
+
+
+.modal-con{
+    margin-top: 0%;
+    position: relative;
+    margin: 0 !important;
+    padding: 75px 70px 50px 30px;
+    height: 668px !important;
+}
+.avatarMod{
+    font-size: 16px;
+    color: white;
+    background-color: #FF0080;
+    padding: 10px 15px;
+    border-radius: 50%;
+    position: absolute;
+    top: 75px;
+    left:30px;
+}
+.review-titleMod{
+    margin: 0 0 0 55px;
+}
+
+.review-titleMod p{
+    margin-top: 15px;
+}
+.modalReviews p{
+    margin-top: 15px;
+}
+
+.modalReviews{
+ padding: 0;
+
+}
+
+.modal-content .closeReviews{
+    position: absolute !important;
+    width: 48px;
+    height: 48px;
+    background-color: #F1F4F9 !important; 
+    border-radius: 50%;
+    border: none;
+    transition: all 0.3s ease-in-out;
+    top: 30px;
+    right: 25px;
+}
+
+.modal-content .closeReviews img{
+    width: 23px;
+    height: 23px;
+}
+
+
+/* end */
+
+/* revierws Оставить отзыв */
+/* start */
+.putreviews{
+    padding: 75px 25px 20px 30px ;
+    position: relative !important;
+}
+
+.avatarPut{
+    position: absolute;
+    font-size: 16px;
+    /* font-family: suisseintl-bold; */
+    color: white;
+    background-color: #FF0080;
+    padding: 10px 15px;
+    border-radius: 100px;
+    top: 0%;
+}
+
+.review-titlePut{
+    margin: 0 0 15px 55px;
+    font-size: small;
+}
+.review-titlePut p{
+    font-family: suisseintl-bold;
+    font-size: 16px;
+    margin: 0 ;
+}
+
+.putreviews textarea{
+    border: 1px solid #DCE1E9;
+    border-radius: 5px;
+}
+
+.putreviews textarea:focus{
+    border: 1px solid black;
+    box-shadow: none !important;
+}
+
+
+.modal-footer{
+justify-content:flex-start !important;
+border-top: none !important;
+
+}
+.modal-footer button{
+    margin-top: 35px;
+    background-color: rgb(0, 0, 0) !important;
+    color: white;
+    border: none;
+    border-radius: 100px;
+}
+.modal-footer button:hover{
+    background-color: #00FFFF !important;
+    color: black;
+}
+
+
+.modal-body textarea{
+    height: 200px !important;
+}
+/* end */
+
+
 .hot-offers {
     background-color: #FF0080;
     width: fit-content;
@@ -371,7 +665,7 @@ start */
 
 
 .selector::placeholder {
-    color: rgba(139, 139, 139, 0.5) !important;  
+    color: rgba(139, 139, 139, 0.5) !important;
 }
 
 .cards img {
@@ -393,6 +687,7 @@ start */
     width: 50px;
     height: 50px;
 }
+
 
 .custom-slide {
     /* width: 270px !important; */
@@ -509,7 +804,23 @@ start */
     visibility: visible;
 }
 
+.reviewsButton{
+    border: 1px solid black;
+    background-color: transparent;
+    border-radius: 100px;
+    width: fit-content;
+    padding: 10px 25px;
+    transition: all 0.3s ease-in-out;
+}
 
+.reviewsButton:first-child{
+    margin-right: 30px !important;
+}
+
+.reviewsButton:hover{
+    background-color: black;
+    color: white;
+}
 
 .btn-center {
     margin: 50px 0 100px 0;
@@ -520,14 +831,16 @@ start */
 
 .btn-center button {
     border: 1px solid black;
-    background-color: transparent;
+    background-color: transparent !important;
     border-radius: 100px;
     padding: 15px 34px;
     transition: all 0.3s ease-in-out;
+    margin-right: 30px;
 }
 
+
 .btn-center button:hover {
-    background-color: black;
+    background-color: black !important;
     color: #fefefe;
 
 }
@@ -644,29 +957,30 @@ form input {
     color: black;
 }
 
-.checkbox label span a{
+.checkbox label span a {
     text-decoration: underline black;
     text-underline-offset: 2px;
     transition: all 0.3s ease-in-out;
 }
 
-.checkbox label span a:hover{
+.checkbox label span a:hover {
     color: black;
     text-decoration: underline transparent;
 }
 
-.checkbox input{
+.checkbox input {
     display: none;
 
 }
-.checkbox label{
+
+.checkbox label {
     color: black;
     position: relative;
     font-size: 13px;
-    padding-left:36px;
+    padding-left: 36px;
 }
 
-.checkbox label::before{
+.checkbox label::before {
     content: "";
     position: absolute;
     left: 0;
@@ -674,31 +988,32 @@ form input {
     transform: translateY(-50%);
     width: 24px;
     height: 24px;
-    border: 1px solid #9EA8BA ;
+    border: 1px solid #9EA8BA;
     border-radius: 3px;
     background-color: white;
     /* transition: 0.3s ; */
 
 }
-.checkbox input:checked + label::before {
+
+.checkbox input:checked+label::before {
     background-image: url('/assets/images/checkbox.svg');
     background-size: 14px 18px;
     background-repeat: no-repeat;
     background-position: center;
     opacity: 1;
 }
-    
+
 /* end */
 
-  
+
 /* Наливная парфюмерия 
 start */
 
-.content-parfum a{
+.content-parfum a {
     width: fit-content;
 }
 
-.parfum-descript{
+.parfum-descript {
     font-size: 20px;
     font-family: suisseintl-bold;
     margin-top: 20px;
@@ -708,15 +1023,15 @@ start */
 }
 
 
-.second-imgwrap{
+.second-imgwrap {
     overflow: hidden;
     width: fit-content;
     width: 270px;
     height: 270px;
-    
+
 }
 
-.right-sec{
+.right-sec {
 
     flex-wrap: wrap;
     justify-content: flex-end;
@@ -728,11 +1043,12 @@ start */
     width: 270px !important;
 
 }
+
 .card-wrap a {
     width: 270px !important;
 }
 
-.second-imgwrap{
+.second-imgwrap {
     width: 270px;
     height: 270px;
     border-radius: 5px;
@@ -740,7 +1056,7 @@ start */
 
 
 
-.second-imgwrap a img{
+.second-imgwrap a img {
     border-radius: 5px;
     transition: all 0.4s ease-in-out;
     object-fit: cover;
@@ -752,14 +1068,14 @@ start */
     border-radius: 5px;
 }
 
-.imgwrap{
+.imgwrap {
     overflow: hidden;
     display: inline-block;
     width: 573px;
     height: 673px;
 }
 
-.imgwrap a img{
+.imgwrap a img {
     border-radius: 5px;
     transition: all 0.4s ease-in-out;
     object-fit: cover;
@@ -770,47 +1086,47 @@ start */
     transform: scale(1.1);
 }
 
-.parfum-descript:hover{
+.parfum-descript:hover {
     color: #FF0080;
 }
 
 
-.imgwrap-thr{
+.imgwrap-thr {
     overflow: hidden;
     display: inline-block;
     width: 370px;
     height: 270px;
 }
 
-.imgwrap-thr a img{
+.imgwrap-thr a img {
     transition: all 0.4s ease-in-out;
-    
+
     border-radius: 5px;
 }
 
-.imgwrap-thr:hover a img{
+.imgwrap-thr:hover a img {
     transform: scale(1.1);
     border-radius: 5px;
 }
 
-.lastdiv{
+.lastdiv {
     width: 370px;
     justify-content: flex-end;
 
 }
 
-.parfumarrow img{
+.parfumarrow img {
     margin-left: 4px;
     width: 35px;
     height: 35px;
     transition: all 0.3s ease-in-out;
 }
 
-.parfumarrow:hover{
+.parfumarrow:hover {
     color: black;
 }
 
-.parfumarrow:hover img{
+.parfumarrow:hover img {
     color: black;
     transform: translateX(8px);
 }
@@ -821,24 +1137,26 @@ start */
 
 /* start */
 
-.count-section{
+.count-section {
     max-width: 970px;
-    margin-top: 100px ;
+    margin-top: 100px;
 }
 
-.count-number{
-justify-content: center;
-align-items: center;
+.count-number {
+    justify-content: center;
+    align-items: center;
 }
-.count-number p{
+
+.count-number p {
     width: fit-content;
 }
 
-.count-section .number{
+.count-section .number {
     font-family: suisseintl-bold;
     font-size: 40px;
-    width: fit-content;  
+    width: fit-content;
 }
+
 /* end */
 
 /* Map section */
@@ -846,7 +1164,7 @@ align-items: center;
 
 /* start */
 
-.map{
+.map {
     height: 408px;
     background-color: #F1F4F9;
     display: flex !important;
@@ -856,39 +1174,40 @@ align-items: center;
     border-radius: 5px;
 }
 
-.map-section{
+.map-section {
     justify-content: center;
 
 }
 
-.map-section p{
+.map-section p {
     font-size: 30px;
     font-family: suisseintl-bold;
 }
-.map-contacts{
+
+.map-contacts {
     margin-top: 15px;
     display: flex;
     flex-direction: column;
 
 }
 
-.map-contacts :first-child{
+.map-contacts :first-child {
     margin-bottom: 10px !important;
 }
 
-.map-contacts a:hover{
+.map-contacts a:hover {
     color: black;
 }
 
- .map-contacts a{
-position: relative;
-text-decoration:none;
-font-family: suisseintl-medium;
-transition: color 0.2s ease-in-out;
-width: fit-content;
- } 
+.map-contacts a {
+    position: relative;
+    text-decoration: none;
+    font-family: suisseintl-medium;
+    transition: color 0.2s ease-in-out;
+    width: fit-content;
+}
 
- .map-contacts a::after{
+.map-contacts a::after {
     content: "";
     position: absolute;
     left: 0px;
@@ -896,20 +1215,20 @@ width: fit-content;
     width: 100%;
     height: 0.5px;
     background-color: currentColor;
-    transition: width 0.2s ease-in-out;  
- }
+    transition: width 0.2s ease-in-out;
+}
 
- .map-contacts a:hover::after {
+.map-contacts a:hover::after {
     width: 0;
 }
 
-.map-img{
+.map-img {
     position: relative;
-    display:flex;
+    display: flex;
     justify-content: center;
 }
 
-.map_btn{
+.map_btn {
     margin-top: 40px;
     width: 188px;
     background-color: #00FFFF;
@@ -920,7 +1239,7 @@ width: fit-content;
     transition: all 0.4s ease-in-out;
 }
 
-.map_btn:hover{
+.map_btn:hover {
     background-color: #00EDED;
 }
 
@@ -940,22 +1259,26 @@ width: fit-content;
     top: 48%;
     left: 20%;
 }
-.pinsimg2{
+
+.pinsimg2 {
     position: absolute;
     top: 56%;
     left: 22%;
 }
-.pinsimg3{
+
+.pinsimg3 {
     position: absolute;
     top: 63%;
     left: 27%;
 }
-.pinsimg4{
+
+.pinsimg4 {
     position: absolute;
     top: 43%;
     left: 31%;
 }
-.pinsimg5{
+
+.pinsimg5 {
     position: absolute;
     top: 57%;
     left: 38%;
@@ -970,21 +1293,19 @@ width: fit-content;
 /* Этапы работы  */
 /* star */
 
-.stage p{
+.stage p {
     font-size: 30px;
     font-family: suisseintl-bold;
     margin-bottom: 50px;
 }
 
-.work-stages{
+.work-stages {
     align-items: center;
     justify-content: center;
-    
+
 }
 
-
-
-.stages-card{
+.stages-card {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -996,7 +1317,7 @@ width: fit-content;
     height: 270px;
 }
 
-.stages-card .stage-stick{
+.stages-card .stage-stick {
     position: absolute;
     border-radius: 100px;
     width: 30px;
@@ -1007,21 +1328,21 @@ width: fit-content;
     padding: 4px 12px;
 }
 
-.stages-card p{
+.stages-card p {
     font-size: 18px;
     margin-top: 35px;
     margin-bottom: 0;
 }
 
-.our-certif{
+.our-certif {
     position: relative;
 }
 
-.our-certif img{
+.our-certif img {
     position: relative;
 }
 
-.our-certif button{
+.our-certif button {
     position: absolute;
     background-color: #fefefe;
     top: 38%;
@@ -1038,8 +1359,7 @@ width: fit-content;
     width: 0%;
     height: 0%;
     border-radius: 5px;
-    background-color: rgba(0, 255, 255, 0.6); 
-    /* opacity: 0; */
+    background-color: rgba(0, 255, 255, 0.6);
     transition: width 0.3s ease, height 0.3s ease, top 0.3s ease, left 0.3s ease;
     z-index: 2;
 }
@@ -1052,7 +1372,7 @@ width: fit-content;
 
 }
 
-.our-certif button img{
+.our-certif button img {
     padding: 25px;
 }
 
@@ -1063,16 +1383,16 @@ width: fit-content;
 
 /* start */
 
-.reviews-card{
+.reviews-card {
     position: relative;
-    /* width: 310px; */
-    background-color: #DCE1E9;
+    width: 310px;
+    background-color: #F1F4F9;
     margin-right: 20px;
     padding: 30px;
     border-radius: 5px;
 }
 
-.reviews-card .avatar{
+.reviews-card .avatar {
     position: absolute;
     font-size: 16px;
     font-family: suisseintl-bold;
@@ -1080,47 +1400,74 @@ width: fit-content;
     background-color: #FF0080;
     padding: 10px 15px;
     border-radius: 100px;
-    top: 6%;    
+    top: 8%;
 }
-.review-title{
+
+.review-title {
     margin-left: 55px;
 }
-.review-title p{
+
+.review-title p {
     font-family: suisseintl-bold !important;
     margin-top: 0 !important;
 }
 
-.reviews-card p{
+.reviews-card p {
     margin-top: 15px;
     font-size: 16px;
     overflow: hidden;
     text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 8;
+    -webkit-box-orient: vertical;
     margin-bottom: 0;
     font-family: suisseintl-medium;
 }
 
+.reviews-card button{
+    margin-top: 30px !important;
+    border: none;
+    color: black;
+    background: none !important;
+    font-size: 15px;
+    text-decoration: underline;
+    transition: all 0.3s ease-in-out;
+}
+
+.reviews-card button:hover{
+    text-decoration: underline transparent;
+}
 
 
-.last-cards{
+.reviewButtons{
+    margin-top: 30px;
+}
+
+.last-cards {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
 
-.last-cards img{
+.reviewsButton{
+
+}
+
+.last-cards img {
     width: 110px;
     height: 110px;
 }
-.last-cards p{
-   text-align: center;
+
+.last-cards p {
+    text-align: center;
     margin-top: 25px;
     width: fit-content;
     font-family: suisseintl-bold;
 }
 
-.last-arrow button{
+.last-arrow button {
 
     position: absolute;
     bottom: 96%;
@@ -1130,9 +1477,10 @@ width: fit-content;
     background-color: #FF0080;
 }
 
-.last-arrow img{
+.last-arrow img {
     padding: 30px 23px;
 }
+
 /* end */
 
 
