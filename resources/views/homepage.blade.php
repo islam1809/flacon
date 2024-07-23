@@ -27,8 +27,39 @@
     </div>
     <div class="content-width" style="background-color: #F1F4F9">
         <div class="container justify-content-between align-items-center ">
-            <div class="row justify-content-between " style="padding: 13px 0">
+            <div class="row justify-content-between " style="padding: 13px 0">   
+
                 <div class=" col-2  dropdown" style="width: fit-content">
+                    <div class="conditions">
+                        <p class="conditions-trigger">Условия работы</p>
+                        <div class="conDropIc"></div>
+                    </div>
+                    <div class="drop-menuCondition">
+                        <div class="condition-info">
+                            <a href=""> Как сделать заказ </a>
+                        </div>
+                        <div class="condition-info">
+                            <a href=""> Доставка/оплата</a>
+                        </div>
+                        <div class="condition-info">
+                            <a href="">Система скидок</a>
+                        </div>
+                        <div class="condition-info">
+                            <a href="">Рекдамные материалы</a>
+                        </div>
+                        <div class="condition-info">
+                            <a href="">Сертификаты</a>
+                        </div>
+                        <div class="condition-info">
+                            <a href="">Отзывы</a>
+                        </div>
+                        <div class="condition-info">
+                            <a href="">Политика конфиденциальности</a>
+                        </div>
+
+                    </div>
+
+                    {{--                     
                     <li class="services"><a href="/" class="about">Условия работы <img class="dropdown-icon"
                                 src="{{ asset('/assets/images/arrowdown.png') }}" alt="">
                         </a>
@@ -41,7 +72,7 @@
                             <a href="/">Отзывы</a>
                             <a href="/">Политика конфиденциальности</a>
                         </div>
-                    </li>
+                    </li> --}}
                 </div>
                 <div class="col-2">
                     <div class=" "><a href="" class="about">Франшиза</a></div>
@@ -73,52 +104,69 @@
                 </div>
             </div>
             <div class="col-2 dropdown">
-                <ul class="nav">
-                    <li class="services"><a href="/" style="font-family:SuisseIntl-Medium" class="about">8
-                            (800)-100-60-41 <img class="dropdown-icon" src="{{ asset('/assets/images/arrowdown.png') }}"
-                                alt=""></a>
+                <div class="drop-trigger">
+                    <p class="drop-triggerP">8 (800)-100-60-41</p>
+                    <div class="dropIc"></div>
+                </div>
+                <div class="drop-menu">
+                    <div class="content-info">
+                        <a href="" style="font-family: suisseintl-medium"> 8 (800)-100-60-41 </a>
+                        <p>Звонок бесплатный</p>
+                    </div>
+                    <div class="content-it">
+                        <a href=""> +7 (903) 845 78 02</a>
+                        <div class="whatsapp-icon"></div>
+                        <div class="viber-icon"></div>
+                    </div>
+                    <div class="content-it">
+                        <a href="">+7 (903) 845 78 02</a>
+                        <div class="whatsapp-icon"></div>
+                        <div class="viber-icon"></div>
+                    </div>
+                    <div class="content-it">
+                        <a href="">+7 (903) 845 78 02</a>
+                        <div class="whatsapp-icon"></div>
+                        <div class="viber-icon"></div>
+                    </div>
+                    <div class="work-info">
+                        <p>Время работы</p>
+                        <p style="font-family: suisseintl-medium">ПН-ПТ 9:30-18:00</p>
+                    </div>
+                </div>
+
+            </div>
+
+            {{-- <ul class="nav">
+                    <li class="services">
+                        <a href="/" class="about">
+                            <img class="dropdown-icon" src="{{ asset('/assets/images/arrowdown.png') }}" alt="">
+                        </a>
                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li class="num"><a class="dropdown-item"href="#" style="font-family:SuisseIntl-Medium"> 8
-                                    (800)-100-60-41</a></li>
-                            <li style="font-size:small">Звонок бесплатный </li>
-                            <div class="d-flex align-items-center" style="padding-top: 15px">
-                                <li class="num" style=""><a class="dropdown-item" href="#"
-                                        style="font-family:SuisseIntl-Medium">+7 (903) 845
-                                        78 02</a></li>
-                                <div class="whatsapp-icon" style="margin-left: 5px">
-                                </div>
-                                <div class="viber-icon" style="margin-left: 5px">
-                                </div>
-                            </div>
-
-                            <div class="d-flex align-items-center" style="padding-top: 15px">
-                                <li class="num" style=""><a class="dropdown-item" href="#"
-                                        style="font-family:SuisseIntl-Medium">+7 (903) 845
-                                        78 02</a></li>
-                                <div class="whatsapp-icon" style="margin-left: 5px">
-                                </div>
-                                <div class="viber-icon" style="margin-left: 5px">
-                                </div>
-                            </div>
-
-                            <div class="d-flex align-items-center" style="padding-top: 15px">
-                                <li class="num" style=""><a class="dropdown-item" href="#"
-                                        style="font-family:SuisseIntl-Medium">+7 (903)
-                                        845 78 02</a></li>
-                                <div class="whatsapp-icon" style="margin-left: 5px">
-                                </div>
-                                <div class="viber-icon" style="margin-left: 5px">
-                                </div>
-                            </div>
-
-
-                            <li style="font-size:small; padding-top:15px">Время работы:</li>
-                            <li style="padding-bottom:14px" style="font-family:SuisseIntl-Medium">ПН-ПТ 9:30-18:00
+                            <li class="num">
+                                <a class="dropdown-item" href="#">8 (800)-100-60-41</a>
                             </li>
+                            <li class="dropdown-info">Звонок бесплатный</li>
+                            <li class="d-flex align-items-center">
+                                <a class="dropdown-item num" href="#">+7 (903) 845 78 02</a>
+                                <div class="whatsapp-icon"></div>
+                                <div class="viber-icon"></div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <a class="dropdown-item num" href="#">+7 (903) 845 78 02</a>
+                                <div class="whatsapp-icon"></div>
+                                <div class="viber-icon"></div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <a class="dropdown-item num" href="#">+7 (903) 845 78 02</a>
+                                <div class="whatsapp-icon"></div>
+                                <div class="viber-icon"></div>
+                            </li>
+                            <li class="dropdown-info">Время работы:</li>
+                            <li class="dropdown-info">ПН-ПТ 9:30-18:00</li>
                         </ul>
                     </li>
-                </ul>
-            </div>
+                </ul> --}}
+
 
             <div class="col-3 text-end">
                 <div class="d-flex justify-content-end">
@@ -217,58 +265,117 @@
         <div class="modal-dialog modal-xl modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-body" style="padding: 30px 30px 40px">
-                    <div class="row modal-window">
-                        <div class="slick-modal modal-parfum">
-                            
-                            <div class="slide-modal">
-                                <img class="modal-productimage" src="{{ asset('/assets/images/Rectangle 1.svg') }}"
-                                alt="">
-                                <div class="modal-arrow"></div>
-                                <div class="stick-sale modal-sale">Sale</div>
-                                <div class="modal-new">New</div>
-                                <div class="stick-modal"><img src="{{ asset('/assets/images/Favorite.svg') }}"alt="">
-                                </div>
-                            </div>
-
-                            <div class="slide-modal">
-                                <img class="modal-productimage" src="{{ asset('/assets/images/Rectangle 1.svg') }}"
-                                    alt="">
-                                <div class="modal-arrow"></div>
-                                <div class="stick-sale modal-sale">Sale</div>
-                                <div class="modal-new">New</div>
-                                <div class="stick-modal"><img src="{{ asset('/assets/images/Favorite.svg') }}"
-                                        alt="">
+                    <div class="row modal-window d-flex justify-space-between">
+                        <div class="col-6" style="width: 44%">
+                            <div class="slick-modal modal-parfum">
+                                <div class="slide-modal">
+                                    <img class="modal-productimage"
+                                        src="{{ asset('/assets/images/Rectangle 2.svg') }}" alt="">
+                                    <div class="modal-arrow"></div>
+                                    <div class="stick-sale modal-sale">Sale</div>
+                                    <div class="modal-new">New</div>
+                                    <div class="stick-modal"><img
+                                            src="{{ asset('/assets/images/Favorite.svg') }}"alt="">
                                     </div>
-                                    <button class="modal-view-btn" data-bs-toggle="modal"data-bs-target="#exampleModal">
+                                    <button class="modal-view-btn"
+                                        data-bs-toggle="modal"data-bs-target="#exampleModal">
                                         <img src="{{ asset('/assets/images/modal-view.svg') }}"alt="">
-                                </button>
-                            </div>
-                            <div class="slide-modal">
-                                <div class="modal-arrow"></div>
-                                <div class="stick-sale modal-sale">Sale</div>
-                                <div class="modal-new">New</div>
-                                <div class="stick-modal"><img src="{{ asset('/assets/images/Favorite.svg') }}"
-                                    alt="">
+                                    </button>
                                 </div>
-                                <button class="modal-view-btn"
-                                data-bs-toggle="modal"data-bs-target="#exampleModal"><img
-                                src="{{ asset('/assets/images/modal-view.svg') }}" alt=""></button>
-                                <img class="modal-productimage" src="{{ asset('/assets/images/Rectangle 1.svg') }}"
-                                alt="">
-                            </div>
-                            
-                        </div>
-                        <div class="arrow-modal"></div>
 
-                        <div class="slide-modal">
-                            <div class="stick-sale">Sale</div>
-                            <p class="product-title">Shermadini House(LAB parfum) №159 (100мл)</p>
-                            <div class="description">
-                                <p class="product-descript">Ночной / Апельсин / Зима / Осень</p>
-                                <button class="product-btn">Узнать цену</button>
-                                <p class="product-title">Dimond 18мл голубой </p>
+                                <div class="slide-modal">
+                                    <img class="modal-productimage"
+                                        src="{{ asset('/assets/images/Rectangle 1.svg') }}" alt="">
+                                    <div class="modal-arrow"></div>
+                                    <div class="stick-sale modal-sale">Sale</div>
+                                    <div class="modal-new">New</div>
+                                    <div class="stick-modal"><img src="{{ asset('/assets/images/Favorite.svg') }}"
+                                            alt="">
+                                    </div>
+                                    <button class="modal-view-btn"
+                                        data-bs-toggle="modal"data-bs-target="#exampleModal">
+                                        <img src="{{ asset('/assets/images/modal-view.svg') }}"alt="">
+                                    </button>
+                                </div>
+                                <div class="slide-modal">
+                                    <div class="modal-arrow"></div>
+                                    <div class="stick-sale modal-sale">Sale</div>
+                                    <div class="modal-new">New</div>
+                                    <div class="stick-modal"><img src="{{ asset('/assets/images/Favorite.svg') }}"
+                                            alt="">
+                                    </div>
+                                    <button class="modal-view-btn"
+                                        data-bs-toggle="modal"data-bs-target="#exampleModal"><img
+                                            src="{{ asset('/assets/images/modal-view.svg') }}"
+                                            alt=""></button>
+                                    <img class="modal-productimage"
+                                        src="{{ asset('/assets/images/Rectangle 3.svg') }}" alt="">
+                                </div>
                             </div>
                         </div>
+
+                        <div class="col-6 d-flex  ">
+                            <div class="slide-modal">
+                                <div class="Revstick-sale">
+                                    <p class="RevProduct-title">Shermadini House(LAB parfum) №159 (100мл)</p>
+                                    Артикул:3938914 <span style="margin-left:15px"> Вес: 118г</span>
+                                </div>
+                                <div class="Revprice">
+                                    <p>470 ₽ <span>690 ₽</span></p>
+                                </div>
+                                <div class="Revprice-info">
+                                    <div class="Revtotal-price">
+                                        <p>485 руб/шт <span>При общем заказе от 5.000 ₽</span></p>
+                                        <p>480 руб/шт <span>При общем заказе от 10.000 ₽</span></p>
+                                        <p>475 руб/шт <span>При общем заказе от 20.000 ₽</span></p>
+                                        <p>470 руб/шт <span>При общем заказе от 50.000 ₽</span></p>
+                                    </div>
+                                </div>
+
+                                <div class="Revmessangers-trig ">
+                                    <div class="Revtrigger d-flex justify-content-between">
+                                        Аромат №123456789
+                                        <img src="{{ asset('/assets/images/formArrow.svg') }}" alt="">
+                                    </div>
+
+                                    <div class="RevCustom-options">
+                                        <div class="Revcustom-option">
+                                            <img class="customimage" src="{{ asset('/assets/images/black.png') }}"
+                                                alt="">
+                                            Черный
+                                        </div>
+                                        <div class="Revcustom-option">
+                                            <img src="{{ asset('/assets/images/green.png') }}" alt="">
+                                            Зеленый
+                                        </div>
+                                        <div class="Revcustom-option">
+                                            <img src="{{ asset('/assets/images/orange.png') }}" alt="">
+                                            Оранжевый
+                                        </div>
+                                        <div class="Revcustom-option">
+                                            <img src="{{ asset('/assets/images/red.png') }}" alt="">
+                                            Красный
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="buttonsMore d-flex justify-content-between" style="margin: 20px 0">
+                                    <button class="Red">10мл</button>
+                                    <button>18мл</button>
+                                    <button>32мл</button>
+                                    <button>50мл</button>
+                                    <button>100мл</button>
+                                </div>
+                                <div class="quantityBtn d-flex">
+                                    <button class="minus">-</button>
+                                    1
+                                    <button class="plus">+</button>
+                                    <button class="addBtn">Добавить в Карзину</button>
+                                </div>
+                                <button class="somoreBtn">Подробнее</button>
+                            </div>
+                        </div>
+
                         <button type="button" class="btn btn-secondary closeReviews" data-bs-dismiss="modal">
                             <img src="{{ asset('/assets/images/btn-closeModal.png') }}" alt="">
                         </button>
@@ -278,7 +385,7 @@
         </div>
     </div>
     {{-- end --}}
-    
+
     <div class="container" style="margin-top:35px">
         <div class="slick-carousel">
             <div class=" custom-slide">

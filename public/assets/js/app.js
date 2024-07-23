@@ -5,10 +5,15 @@ function hide(){
 
 
 
-$('.slick-modal').slick({
-    appendArrows: $(".arrow-modal"),
-    prevArrow:'<div class="prev-arrow-modal"><img src="/assets/images/Arrow_right.svg" alt=""></div>',
-    nextArrow:'<div class="next-arrow-modal"><img src="/assets/images/Arrow_left.svg" alt=""></div>',
+$(document).ready(function(){
+    $('.slick-modal').slick({
+        prevArrow: '<div class="prev-arrow"><img src="/assets/images/Arrow_right.svg" alt=""></div>',
+        nextArrow: '<div class="next-arrow"><img src="/assets/images/Arrow_left.svg" alt=""></div>',
+    });
+
+    $('#exampleModal').on('shown.bs.modal', function (e) {
+        $('.slick-modal').slick('setPosition');
+    });
 });
 
 // $(".slick-modal").slick({
@@ -29,8 +34,8 @@ $(".slick-carousel").slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     appendArrows:  $(".sales-arrow"),
-    prevArrow:'<div class="prev-arrow"><img src="/assets/images/Arrow_right.svg" alt=""></div>',
-    nextArrow:'<div class="next-arrow"><img src="/assets/images/Arrow_left.svg" alt=""></div>',
+    prevArrow:'<div class="Selprev-arrow"><img src="/assets/images/Arrow_right.svg" alt=""></div>',
+    nextArrow:'<div class="Selnext-arrow"><img src="/assets/images/Arrow_left.svg" alt=""></div>',
   });
 $(".slick-cert").slick({
     dots:false,
@@ -39,8 +44,8 @@ $(".slick-cert").slick({
     slidesToShow: 4,
     slidesToScroll: 1,
     appendArrows:  $(".certificate-arrow"),
-    prevArrow:'<div class="prev-arrow"><img src="/assets/images/Arrow_right.svg" alt=""></div>',
-    nextArrow:'<div class="next-arrow"><img src="/assets/images/Arrow_left.svg" alt=""></div>',
+    prevArrow:'<div class="Selprev-arrow"><img src="/assets/images/Arrow_right.svg" alt=""></div>',
+    nextArrow:'<div class="Selnext-arrow"><img src="/assets/images/Arrow_left.svg" alt=""></div>',
   });
   $(".slick-reviews").slick({
     dots:false,
@@ -49,10 +54,76 @@ $(".slick-cert").slick({
     slidesToShow: 3,
     slidesToScroll: 1,
     appendArrows:  $(".reviews-arrow"),
-    prevArrow:'<div class="prev-arrow"><img src="/assets/images/Arrow_right.svg" alt=""></div>',
-    nextArrow:'<div class="next-arrow"><img src="/assets/images/Arrow_left.svg" alt=""></div>',
+    prevArrow:'<div class="Selprev-arrow"><img src="/assets/images/Arrow_right.svg" alt=""></div>',
+    nextArrow:'<div class="Selnext-arrow"><img src="/assets/images/Arrow_left.svg" alt=""></div>',
   });
 
+
+
+  document.addEventListener('DOMContentLoaded', function () {
+    const trigger = document.querySelector('.Revtrigger');
+    const options = document.querySelector('.RevCustom-options');
+    const triggerImg = trigger.querySelector('img');
+
+    trigger.addEventListener('click', function () {
+        if (options.classList.contains('show')) {
+            options.classList.remove('show');
+            triggerImg.classList.remove('rotate');
+            setTimeout(() => {
+                options.style.display = 'none';
+            }, 300);
+        } else {
+            options.style.display = 'block';
+            setTimeout(() => {
+                options.classList.add('show');
+                triggerImg.classList.add('rotate');
+            }, 10);
+        }
+    });
+
+    document.addEventListener('click', function (event) {
+        if (!trigger.contains(event.target) && !options.contains(event.target)) {
+            options.classList.remove('show');
+            triggerImg.classList.remove('rotate');
+            setTimeout(() => {
+                options.style.display = 'none';
+            }, 300);
+        }
+    });
+});
+
+
+//   document.addEventListener('DOMContentLoaded', function () {
+//     const trigger = document.querySelector('.Revtrigger');
+//     const options = document.querySelector('.RevCustom-options');
+//     const triggerImg = trigger.querySelector('img');
+
+//     trigger.addEventListener('click', function () {
+//         if (options.classList.contains('show')) {
+//             options.classList.remove('show');
+//             triggerImg.classList.remove('rotate');
+//             setTimeout(() => {
+//                 options.style.display = 'none';
+//             }, 300);
+//         } else {
+//             options.style.display = 'block';
+//             setTimeout(() => {
+//                 options.classList.add('show');
+//                 triggerImg.classList.add('rotate');
+//             }, 10);
+//         }
+//     });
+
+//     document.addEventListener('click', function (event) {
+//         if (!trigger.contains(event.target) && !options.contains(event.target)) {
+//             options.classList.remove('show');
+//             triggerImg.classList.remove('rotate');
+//             setTimeout(() => {
+//                 options.style.display = 'none';
+//             }, 300);
+//         }
+//     });
+// });
 
 
 
@@ -87,6 +158,8 @@ $(".slick-cert").slick({
         }
     });
 });
+
+
 
 
 

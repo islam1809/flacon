@@ -55,83 +55,185 @@ a {
 .dropdown {
     position: relative;
     display: inline-block;
-    /* transition: all 0.4s ease-in-out ; */
 }
 
-.dropdown .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #ffffff;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
+.conditions{
+    display: flex;
+}
+.conditions p{
+    margin: 0;
+}
+
+.conDropIc{
+    background-image: url('/assets/images/arrowdown.png');
+    background-size: cover;
+    width: 18px;
+    height: 18px;
+    margin: auto;
+    margin-left:5px;
     transition: all 0.4s ease-in-out;
 }
 
+.dropdown:hover .conDropIc{
+    transform: rotate(180deg);
+}
 
-.dropdown-content a {
+.drop-menuCondition {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+    box-shadow: 0px 4px 10px 0px rgba(157, 157, 157, 0.25);
+    position: absolute; 
+    padding: 20px 15px;
+    background-color: white;
+    border-radius: 5px;
+    margin-top: 15px;
+    padding: 10px;
+    z-index: 1000;
+    width: 252px;
+}
+
+.conditions:hover + .drop-menuCondition,
+.conditions:focus + .drop-menuCondition,
+.drop-menuCondition:hover,
+.drop-menuCondition:focus {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.condition-info{
+    margin-bottom: 20px;
+}
+
+.condition-info a{
+    
+    transition: all 0.4s ease-in-out;
+}
+.condition-info a:hover{
+    color: #FF0080;
+}
+
+.dropdown{
+    position: relative;
+    margin: auto 0;
+}
+
+.drop-trigger{
+    display: flex;
+}
+.drop-trigger p{
+    
+    cursor: pointer;
+    font-family: suisseintl-medium;
+    font-size: 16px;
     color: black;
-    padding: 12px 16px;
-    text-decoration: none;
+    margin: 0;
+}
+
+
+.dropIc{
+    background-image: url('/assets/images/arrowdown.png');
+    background-size: cover;
+    width: 18px;
+    height: 18px;
+    margin: auto;
+    margin-left:5px;
+    transition: all 0.4s ease-in-out;
+}
+
+.dropdown:hover .dropIc {
+    transform: rotate(180deg);
+}
+
+.drop-menu{
+    position: absolute;
+    display: flex;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0px 4px 10px 0px rgba(157, 157, 157, 0.25);
+    padding: 20px 15px 0;
+    z-index: 9999;
+    flex-direction: column;
+    min-height: 281px;
+    min-width: 252px;
+    opacity: 0;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+
+}
+
+
+
+.dropdown:hover .drop-trigger + .drop-menu {
     display: block;
-    /* transition: all 0.4s ease-in-out;   */
+    opacity: 1;
+    transform: translateY(0);
 }
 
-
-.dropdown-content a:hover {
-    color: #ff0055;
-}
-
-
-.dropdown:hover .dropdown-content {
-    display: block;
-
-}
-
-.dropdown-menu {
-    padding: 20px 15px 0px !important;
-}
-
-.dropdown-menu a {
-    padding: 0;
-}
-
-.dropdown-menu .num:hover {
-    text-decoration-color: white !important;
-}
-
-.dropdown-menu .num {
+.content-info a{
     text-decoration: underline !important;
     text-underline-offset: 3px;
     transition: all 0.4s ease-in-out;
 }
 
-dropdown-item:focus,
-.dropdown-item:hover {
-    background-color: transparent !important;
+.content-info:first-child p{
+    font-size: small;
+    color: #676767;
 }
 
-.services .dropdown-icon {
-    position: relative;
-    transform: rotate(0deg);
+.content-info:hover a{
+    color: black;
+    text-decoration: underline white !important;
+    color: black;
+
+}
+
+.content-it{
+    color: black;
+    display: flex;
+    margin-bottom: 15px;  
+    text-align: center;
+    align-items: center;
+}
+
+
+.content-it a{
+    font-family: suisseintl-medium;
+    font-size: 16px;
+    color: black;
+    text-decoration: underline !important;
+    text-underline-offset: 3px;
     transition: all 0.4s ease-in-out;
+    
+    
 }
 
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    border: none;
-    transition: all 0.4s ease-in-out !important;
+.content-it:hover a{
+    text-decoration: underline white !important;
+    color: black;
 }
 
-.about:hover {
-    color: black !important
+.work-info p:first-child {
+    margin-bottom: 0;
+    font-size: small;
+    color: #676767;
+
 }
 
-.services:hover .dropdown-menu {
+
+
+
+
+.services:hover .dropdown-menu  {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0) ;
+
+
     display: block;
+    transition: all 0.4s ease-in-out !important;
 }
 
 .dropdown li {
@@ -182,6 +284,7 @@ dropdown-item:focus,
 }
 
 .whatsapp-icon {
+    margin-left: 4px;
     background-image: url('/assets/images/whatsapp2.png');
     width: 35px;
     height: 35px;
@@ -290,7 +393,7 @@ start */
 /* start */
 .slick-modal {
     width: 470px;
-    height: 470px;
+    height: 475px;
 }
 
 
@@ -375,50 +478,220 @@ start */
     top: 45%;
     right: 5%;
 }
-.custom-modal{
-    height: 400px !important; 
+
+.custom-modal {
+    height: 400px !important;
 }
 
- /* reviews modal scroolbar */
+/* reviews modal scroolbar */
 /* start  */
 
 /* width */
 .modalReviews::-webkit-scrollbar {
     width: 4px;
     height: 50px !important;
-  }
-  
-  /* Track */
-  .modalReviews::-webkit-scrollbar-track {
-    background: #DCE1E9;
-  }
-  
-  /* Handle */
-  .modalReviews::-webkit-scrollbar-thumb {
-    background:  #9EA8BA;
-  }
-  
-  /* end */
-
-/* .modal-parfum{
-    position: relative;
-} */
-
-.arrow-modal{
-    position: absolute;
-    top: 32%;
 }
 
-.prev-arrow-modal.slick-arrow{
-    /* position: absolute;   */
-    top: 12%;
-    right: 44%;
-  }
-.next-arrow-modal.slick-arrow{
+/* Track */
+.modalReviews::-webkit-scrollbar-track {
+    background: #DCE1E9;
+}
+
+/* Handle */
+.modalReviews::-webkit-scrollbar-thumb {
+    background: #9EA8BA;
+}
+
+/* end */
+
+
+/* modal лидеры продаж  */
+/* start */
+.modal-window {
+    position: relative;
+}
+
+.prev-arrow,
+.next-arrow {
     position: absolute;
-    top: 12%;
-    left: 34%;
-  }
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.prev-arrow {
+    left: 14px;
+    /* Adjust as needed */
+}
+
+.next-arrow {
+    right: 33px;
+    /* Adjust as needed */
+}
+
+
+.RevProduct-title {
+    margin: 0;
+    font-size: 15px;
+    font-family: suisseintl-bold;
+}
+
+.Revstick-sale {
+    font-size: 13px;
+}
+
+.Revprice {
+    margin: 15px 0;
+}
+
+
+.Revprice p {
+    font-size: 30px;
+    font-family: suisseintl-bold;
+}
+
+.Revprice p span {
+    margin-left: 10px;
+    font-size: 16px;
+    text-decoration: line-through;
+}
+
+.Revtotal-price p {
+    margin-bottom: 10px;
+    font-size: 13px;
+}
+
+.Revtotal-price p span {
+    color: #676767;
+}
+
+.Revmessangers-trig {
+    transition: all 0.4s ease-in-out;
+}
+
+.Revtrigger {
+    padding: 12px 15px 11px 15px;
+    width: 100%;
+    background-color: #F1F4F9 !important;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #9EA8BA;
+    transition: all 0.4s ease-in-out;
+}
+
+.Revmessangers-trig img {
+    object-fit: cover;
+    width: 20px;
+    height: 20px;
+    transition: all 0.4s ease-in-out;
+}
+
+.RevCustom-options {
+    width: 100%;
+
+    margin-bottom: 20px;
+    background-color: #F1F4F9;
+    cursor: pointer;
+    border-radius: 5px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    position: absolute;
+    display: block;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.4s ease, transform 0.3s ease;
+    z-index: 1000;
+}
+
+.RevCustom-options.show {
+    transition: all 0.4s ease-in-out;
+    opacity: 1;
+    transform: translateY(0);
+    display: block;
+
+}
+
+.Revcustom-option {
+    color: #676767;
+    padding: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    z-index: 999;
+    overflow-x: hidden;
+    transition: all 0.4s ease-in-out;
+}
+.Revcustom-option:hover{
+    color: #FF0080 ;
+}
+
+.Revmessangers-trig img.rotate {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease;
+}
+
+/* buttons bottom */
+/* start */
+.buttonsMore button{
+    background-color: transparent !important;
+    border-radius: 100px;
+    padding: 10px 15px;
+    margin-right: 9px;
+}
+
+.buttonsMore .Red{
+    background-color: #FF0080 !important;
+    color: white !important;
+    border: none !important;
+}
+
+.quantityBtn{
+    align-items: center;
+    text-align: center;
+    color: black;
+}
+
+.quantityBtn button{
+    width: 36px;
+    height: 36px;
+    border: none;
+    border-radius: 100px;
+    background-color: #F1F4F9;
+    color: black;
+}
+.quantityBtn .minus{
+    margin-right: 15px;
+    color: #9EA8BA;
+}
+.quantityBtn .plus{
+    margin: 0 16px 0 15px;
+}
+.addBtn{
+    width: 100% !important;
+    height: 100% !important;
+    background-color: black !important;
+    color: white !important;
+    padding: 10px 50px;
+}
+.somoreBtn{
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px 0;
+    color: black;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 100px;
+    transition: all 0.4s ease-in-out;
+}
+.somoreBtn:hover{
+    background-color: black;
+    color: white;
+}
+
+/* end  */
 
 .modal-body {
     width: 100%;
@@ -428,11 +701,11 @@ start */
     margin-right: auto;
 }
 
-.modal-body .btn{
+.modal-body .btn {
     position: absolute;
     width: 48px;
     height: 48px;
-    background-color: #F1F4F9 !important; 
+    background-color: #F1F4F9 !important;
     border-radius: 50%;
     border: none;
     top: 1%;
@@ -442,17 +715,17 @@ start */
 }
 
 
-.btn-secondary:hover{
+.btn-secondary:hover {
     transform: rotate(180deg);
 }
 
 
-.modal-body .btn img{
+.modal-body .btn img {
     width: 23px;
     height: 23px;
 }
 
-.btn-secondary:focus{
+.btn-secondary:focus {
     outline: none !important;
     box-shadow: none !important;
 }
@@ -463,14 +736,15 @@ start */
 
 
 
-.modal-con{
+.modal-con {
     margin-top: 0%;
     position: relative;
     margin: 0 !important;
     padding: 75px 70px 50px 30px;
     height: 668px !important;
 }
-.avatarMod{
+
+.avatarMod {
     font-size: 16px;
     color: white;
     background-color: #FF0080;
@@ -478,37 +752,38 @@ start */
     border-radius: 50%;
     position: absolute;
     top: 75px;
-    left:30px;
+    left: 30px;
 }
-.review-titleMod{
+
+.review-titleMod {
     margin: 0 0 0 55px;
 }
 
-.review-titleMod p{
-    margin-top: 15px;
-}
-.modalReviews p{
+.review-titleMod p {
     margin-top: 15px;
 }
 
-.modalReviews{
- padding: 0;
+.modalReviews p {
+    margin-top: 15px;
+}
+
+.modalReviews {
+    padding: 0;
 
 }
 
-.modal-content .closeReviews{
+.modal-content .closeReviews {
     position: absolute !important;
     width: 48px;
     height: 48px;
-    background-color: #F1F4F9 !important; 
+    background-color: #F1F4F9 !important;
     border-radius: 50%;
     border: none;
     transition: all 0.3s ease-in-out;
-    top: 30px;
     right: 25px;
 }
 
-.modal-content .closeReviews img{
+.modal-content .closeReviews img {
     width: 23px;
     height: 23px;
 }
@@ -518,12 +793,12 @@ start */
 
 /* revierws Оставить отзыв */
 /* start */
-.putreviews{
-    padding: 75px 25px 20px 30px ;
+.putreviews {
+    padding: 75px 25px 20px 30px;
     position: relative !important;
 }
 
-.avatarPut{
+.avatarPut {
     position: absolute;
     font-size: 16px;
     /* font-family: suisseintl-bold; */
@@ -534,48 +809,52 @@ start */
     top: 0%;
 }
 
-.review-titlePut{
+.review-titlePut {
     margin: 0 0 15px 55px;
     font-size: small;
 }
-.review-titlePut p{
+
+.review-titlePut p {
     font-family: suisseintl-bold;
     font-size: 16px;
-    margin: 0 ;
+    margin: 0;
 }
 
-.putreviews textarea{
+.putreviews textarea {
     border: 1px solid #DCE1E9;
     border-radius: 5px;
 }
 
-.putreviews textarea:focus{
+.putreviews textarea:focus {
     border: 1px solid black;
     box-shadow: none !important;
 }
 
 
-.modal-footer{
-justify-content:flex-start !important;
-border-top: none !important;
+.modal-footer {
+    justify-content: flex-start !important;
+    border-top: none !important;
 
 }
-.modal-footer button{
+
+.modal-footer button {
     margin-top: 35px;
     background-color: rgb(0, 0, 0) !important;
     color: white;
     border: none;
     border-radius: 100px;
 }
-.modal-footer button:hover{
+
+.modal-footer button:hover {
     background-color: #00FFFF !important;
     color: black;
 }
 
 
-.modal-body textarea{
+.modal-body textarea {
     height: 200px !important;
 }
+
 /* end */
 
 
@@ -804,7 +1083,7 @@ border-top: none !important;
     visibility: visible;
 }
 
-.reviewsButton{
+.reviewsButton {
     border: 1px solid black;
     background-color: transparent;
     border-radius: 100px;
@@ -813,11 +1092,11 @@ border-top: none !important;
     transition: all 0.3s ease-in-out;
 }
 
-.reviewsButton:first-child{
+.reviewsButton:first-child {
     margin-right: 30px !important;
 }
 
-.reviewsButton:hover{
+.reviewsButton:hover {
     background-color: black;
     color: white;
 }
@@ -874,7 +1153,6 @@ form input {
 }
 
 .messangers-trig {
-
     transition: all 0.4s ease-in-out;
 }
 
@@ -892,11 +1170,7 @@ form input {
     object-fit: cover;
     width: 20px;
     height: 20px;
-
-}
-
-.optiions {
-    position: relative;
+    transition: all 0.4s ease-in-out;
 }
 
 .custom-options {
@@ -913,8 +1187,6 @@ form input {
     transform: translateY(-10px);
     transition: opacity 0.4s ease, transform 0.3s ease;
     z-index: 1000;
-
-
 }
 
 .custom-options.show {
@@ -1424,7 +1696,7 @@ start */
     font-family: suisseintl-medium;
 }
 
-.reviews-card button{
+.reviews-card button {
     margin-top: 30px !important;
     border: none;
     color: black;
@@ -1434,12 +1706,12 @@ start */
     transition: all 0.3s ease-in-out;
 }
 
-.reviews-card button:hover{
+.reviews-card button:hover {
     text-decoration: underline transparent;
 }
 
 
-.reviewButtons{
+.reviewButtons {
     margin-top: 30px;
 }
 
@@ -1451,9 +1723,7 @@ start */
 
 }
 
-.reviewsButton{
-
-}
+.reviewsButton {}
 
 .last-cards img {
     width: 110px;
